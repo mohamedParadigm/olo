@@ -1,0 +1,169 @@
+/* Start of Order Page */
+@media (max-width: 991px) {
+  body {
+    margin-bottom: 62px;
+  }
+}
+.bg_gray {
+  background-color: #f9fafb;
+}
+.order-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 991px) {
+  .order-wrapper {
+    flex-direction: column;
+  }
+}
+.order-wrapper .order-details {
+  flex-grow: 1;
+}
+.box_order_form {
+  border-radius: var(--radius);
+  background-color: var(--light);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.box_order_form .head {
+  padding: 1rem 1.25rem;
+  color: var(--light);
+  background-color: #454545;
+}
+.form-group textarea {
+  resize: none;
+}
+.box_order_form .custom-radio {
+  display: flex !important;
+}
+.box_order_form .custom-radio .icon svg {
+  width: 2.5rem;
+}
+/* Summary */
+@media (min-width: 992px) {
+  .order-wrapper .order-summary {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 991px) {
+  .order-wrapper .order-summary {
+    width: 100%;
+  }
+}
+.order-summary .price-details {
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  background-color: var(--light);
+  /* overflow: hidden; */
+}
+/* End of Order Page */
+
+/* Start of DropDown Order Types */
+.dropdown-menu.order-type .dropdown-item.active,
+.dropdown-menu.order-type .dropdown-item:active {
+  background-color: var(--alt-color);
+  color: var(--light);
+}
+/* End of DropDown Order Types*/
+
+/* Start of Reset Accordion Button */
+.accordion-button:not(.collapsed) {
+  color: var(--alt-color);
+  background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* End of Reset Accordion Button */
+
+.order-time {
+  width: 100%;
+  background-color: #eeeeee;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.place-order-btn.disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  .place-order-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+}
+@media (min-width: 992px) {
+  .place-order-btn {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/* Wizard Buttons */
+.wizard > .actions > ul {
+  justify-content: space-between;
+}
+.wizard > .actions > ul > li {
+  flex: 1;
+}
+@media screen and (max-width: 991px) {
+  .wizard {
+    position: relative;
+    z-index: 10;
+  }
+  .wizard > .actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .wizard > .actions > ul {
+    margin-bottom: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: #fff;
+  }
+}
+
+/* Start of Mohamed Actions */
+.wizard .radio-with-icon img {
+  width: 40px;
+  height: 40px;
+}
+.order-mobile-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;  
+}
+@media (max-width: 991px) {
+  .order-mobile-actions {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light);
+  }
+}
+.order-mobile-actions .form-group {
+  flex-grow: 1;
+}
+/* End of Mohamed Actions */

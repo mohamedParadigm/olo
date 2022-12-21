@@ -1,0 +1,123 @@
+/* Start of Secondary Nav */
+.secondary_nav {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: var(--light);
+}
+.secondary_nav ul {
+  overflow-x: auto;
+}
+.secondary_nav ul::-webkit-scrollbar {
+  display: none;
+}
+.secondary_nav a {
+  padding: 0.3rem 1.25rem;
+  border-radius: calc(var(--radius) * 3);
+  color: var(--dark-alt);
+  background-color: rgb(228, 227, 227);
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 120px;
+}
+.secondary_nav a:hover,
+.secondary_nav a.active {
+  color: var(--light);
+  background-color: var(--alt-color);
+}
+.page-section:not(.active) {
+  display: none;
+}
+/* End of Secondary Nav */
+.typography {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.styled-list {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  list-style: initial;
+  opacity: 0.85;
+}
+.meal-image {
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .meal-item .meal-image img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.meal-item .meal-item-description {
+  white-space: initial;
+}
+@media (min-width: 768px) {
+  .title-min-height {
+    min-height: 48px;
+    max-width: 80%;
+    font-size: 1rem;
+  }
+  .p-min-height {
+    min-height: 37px;
+  }
+}
+.page-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+.page-details {
+  flex-grow: 1;
+}
+.cart-details {
+  flex-shrink: 0;
+  width: 300px;
+}
+@media (max-width: 991px) {
+  .cart-details {
+    display: none;
+  }
+}
+.cart-summary .price-details {
+  background-color: var(--light);
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  overflow: hidden;
+}
+.price-details .head {
+  color: var(--light);
+  background-color: var(--dark-alt);
+}
+.price-details .cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    margin-bottom: 60px;
+  }
+  .gift-box,
+  .floating-cart {
+    bottom: 80px;
+  }
+  .jq-toast-wrap.bottom-left {
+    bottom: 130px;
+  }
+}
+.cutomize-link-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #eee;
+}
+.cutomize-link-icon svg {
+  width: 0.85rem;
+  height: 0.85rem;
+}

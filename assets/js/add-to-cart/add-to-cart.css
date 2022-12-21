@@ -1,0 +1,113 @@
+.options:not(.show) .numberstyle-qty {
+  display: none;
+}
+.options.show .add-to-cart {
+  display: none;
+}
+.numberstyle-qty {
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+}
+.numberstyle-qty input{
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+.numberstyle-qty .qty-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+  transition: all 250ms ease;
+  background-color: #f6b318;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  line-height: 1;
+}
+[dir="rtl"] .numberstyle-qty .qty-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+}
+.numberstyle-qty .qty-btn.ready-to-remove {
+  background-color: #eee;
+}
+.numberstyle-qty .qty-btn.disabled,
+.numberstyle-qty .qty-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.numberstyle-qty input {
+  width: 40px;
+  border-left: 0;
+  border-right: 0;
+  color: var(--text-alt);
+  font-size: 1rem;
+  font-weight: 700;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.numberstyle-qty input:focus {
+  outline: 0;
+  box-shadow: 0px;
+}
+
+.numberstyle-qty input[type="number"]::-webkit-inner-spin-button,
+.numberstyle-qty input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.numberstyle-qty input[type="number"] {
+  appearance: textfield;
+}
+.options-customize .numberstyle-qty input {
+  width: 40px;
+}
+
+.options-customize .numberstyle-qty .qty-btn {
+  width: 30px;
+  font-size: 26px;
+  line-height: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-customize .numberstyle-qty {
+  border-radius: 11px;
+}
+@media (max-width: 991px) {
+  .numberstyle-qty .qty-btn,
+  .numberstyle-qty input {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  .options-customize .numberstyle-qty .qty-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

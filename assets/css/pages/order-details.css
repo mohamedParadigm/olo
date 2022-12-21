@@ -1,0 +1,24 @@
+.simple-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.rad-1 {
+  border-radius: var(--radius);
+}
+.section-shadow-blue {
+  box-shadow: var(--bs-shadow-sm);
+}
+.bg-light-2 {
+  background-color: #fafafa !important;
+}
+@media (min-width: 992px) {
+  .resized-section {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.border-dashed {
+  border: 1px dashed;
+}

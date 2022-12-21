@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Texas Chicken Delivery - takeaway</title>
+    <!-- Favicons-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Texas logo.svg"
+      type="image/x-icon"
+    />
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/js/star-rating/css/rates.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/pages/track-order.css" />
+
+    <!-- Preload Style -->
+    <style>
+      .simple-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999999999999999999;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #9a3324;
+        border-color: #9a3324 transparent #9a3324 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg_gray">
+    <!-- Preloader -->
+    <div id="simplePreloader" class="simple-preloader">
+      <div class="lds-dual-ring"></div>
+    </div>
+
+    <main class="app">
+      <!-- Header -->
+      <header class="py-1 bg-white">
+        <div class="container">
+          <div class="row mx-0 g1 align-items-center justify-content-center">
+            <div class="col-auto">
+              <a href="./index.html" class="d-flex">
+                <img
+                  src="./assets/images/Texas logo.svg"
+                  alt="Logo"
+                  width="80"
+                  height="80"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="bg_gray flex-grow-1 track-order">
+        <div class="container py-5">
+          <div class="main-header mb-5">
+            <!-- <h1 class="text-center text-uppercase">No Orders To Track.</h1> -->
+            <h1 class="h4 text-center text-uppercase mb-0 custom-family">Thank You</h1>
+            <p class="fs-6 text-center fw-bold">Your Order Has Been Submitted successfully</p>
+            <p class="fs-6 text-center mb-0">Your order confirm number: <span class="text-main">123456</span></p>
+            <p class="fs-6 text-center">You will recieve an email confirmation shortly.</p>
+          </div>
+  
+          <div class="row track-banner mb-3 mb-lg-5 mx-0">
+            <div class="col">
+              <h2 class="h5">Estimated Delivery Time</h2>
+              <p class="lead mb-0">30 Minutes</p>
+            </div>
+            <div class="col-auto text-center">
+              <h2 class="h5 accordion-header mb-2">
+                <button
+                  class="accordion-button collapsed p-0 g1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Order Number
+                </button>
+                <p class="lead mb-0">123456</p>
+              </h2>
+            </div>
+          </div>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse mb-3"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body shadow-sm bg-white rad-1">
+              <div class="row mx-0 g-3">
+                <div class="col">
+                  <h4 class="h6">Delivering to:</h4>
+                  <p class="lead mb-1 fs-sm">User Name</p>
+                  <p class="lead mb-0 fs-sm">18, Mahat El Ramal, Alexandria, Egypt</p>
+                </div>
+                <div class="col">
+                  <h4 class="h6">Payment Method:</h4>
+                  <p class="lead mb-0 fs-sm">Cash on Delivery</p>
+                </div>
+                <div class="col-12">
+                  <h4 class="h6">Order Summary:</h4>
+                  <div>
+                    <h4 class="h6 fs-sm mt-2">Sauces</h4>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Tomato</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>12 AED</span>
+                    </div>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Onion</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>2 AED</span>
+                    </div>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Cheese</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>8 AED</span>
+                    </div>
+                    <h4 class="h6 fs-sm mt-2">Ingediants</h4>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Tomato</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>12 AED</span>
+                    </div>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Onion</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>12 AED</span>
+                    </div>
+                    <div class="d-flex g1 align-items-center mb-1">
+                      <span>Cheese</span>
+                      <span class="border-dashed flex-fill"></span>
+                      <span>12 AED</span>
+                    </div>
+                  </div>
+                  <div class="divider my-2"></div>
+                  <ul>
+                    <li class="d-flex g1">
+                      <p class="flex-grow-1 lead mb-0">
+                        Delivery Fee
+                      </p>
+                      <strong>0.00 AED</strong>
+                    </li>
+                    <li class="d-flex g1">
+                      <p class="flex-grow-1 lead mb-0">
+                        Vat
+                      </p>
+                      <strong>3.00 AED</strong>
+                    </li>
+                    <li class="d-flex g1">
+                      <p class="flex-grow-1 lead mb-0">
+                        Total
+                      </p>
+                      <strong>270 AED</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="track-wrapper mb-3 mb-lg-5">
+            <li class="track-item active">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 16.933333 16.933333" style="enable-background:new 0 0 512 512;color: #2D2926;" xml:space="preserve" class=""><g><g xmlns="http://www.w3.org/2000/svg" id="layer2"><path id="path5720" d="m5.4570351 1.098081c-.2904501.26673-.49125.6695501-.6237399 1.31517.0612-.0191.11737-.0356.1839699-.0532.5567201-.1476999 1.3005799-.24236 2.1259701-.24236.8254 0 1.5692699.0947 2.1259699.24236.0675.0179.12352.0328.18552.0522-.1320099-.6462399-.3305299-1.0472499-.6211501-1.3141299-.3444899-.31635005-.87645-.48144005-1.6893098-.56898005-.8128902.08748-1.34274.25259-1.6872301.56893995zm-.30487 1.7714701c-.2484098.0659-.4442798.1425399-.5565597.2113599-.0855.0524-.0997.0739-.0997.0739v.0217c.0494.0286.1456499.0701.2697498.1090399.2519101.0789.6103202.15392.9684102.21704.7015998.12367 1.3796898.19792 1.40819.2010201 0-.00001.00101 0 .00101 0s.00101-.00001.00101 0c.0285-.003.7065899-.0773 1.40819-.2010201.35809-.0631.7164998-.13809.9684099-.21704.12411-.0389.2203601-.0805.2697498-.1090399v-.0217s-.0142-.0215-.0997-.0739c-.11228-.0688-.3081701-.14545-.5565699-.21136-.4968002-.13182-1.2068-.22428-1.9910951-.22428-.7843047.0000001-1.4943048.0925-1.991095.2242801zm4.3738946.96325c-.2667799.0738-.5702599.13623-.8821197.1911998-.7392202.1303001-1.4727701.20877-1.4727701.20877-.009.00101-.018899-.0000098-.0279 0-.009-.0000098-.018899.00101-.0279 0 0 0-.73354-.0785-1.47278-.20877-.3112599-.0549-.61412-.1171098-.88057-.19068v1.0635001c0 1.3454399 1.06578 2.4174199 2.38125 2.4174199.0936 0 .18029-.005.2707899-.015499.0521-.5309902.5001101-.9487802 1.0521302-.9487802h.58342c.2993199-.4036201.4764598-.9043303.4764598-1.4531401zm-5.8223798.99012c.002.3477098.22887.5880697.4656001.5880798.0355 0 .0695-.004.10439-.014499-.0271-.1616501-.0408-.33074-.0408-.49971v-.6573303c-.0206-.004-.0429-.007-.063595-.00685-.2367251.0001693-.461595.2405292-.4655951.5903095zm6.3520291.07418c0 .16892-.0155.33836-.0424.49971.0358.010499.0719.014499.107491.014499.22743.00101.461469-.2393299.46172-.5880801-.0027-.350819-.229648-.5901489-.466345-.590304-.02037-.000155-.04057.00285-.06047.00685zm-1.5895291 1.98254c-.2905001 0-.5291701.23143-.5291701.5291699v1.05885h6.3489692v-1.05885c0-.29774-.238679-.52917-.529169-.52917zm-2.9098909 1.2133598 1.49035 1.4913902.3612102-.9017602v-.8511101c-.0873.008-.1753801.011901-.2645801.011901-.58621 0-1.13104-.17286-1.5875046-.4738856zm5.02707-.6846701h1.05833c.352871 0 .352871.5291701 0 .5291701h-1.05833c-.35286 0-.35286-.5291701 0-.5291701zm-5.5820891.87953-.6304499.47233 1.73995 1.7383912.6289-.47232zm-1.18184.66973c-1.4733647.5074103-2.7341947 1.8903212-2.7341947 4.5366712h2.35386v-.2651c0-.35286.52917-.35286.52917 0v1.05834h1.8112599c.0827.007.1023102-.0502.1359101-.11369.0476-.10509.0791-.25932.1271199-.48834.0417-.19895.0858-.41518.2010201-.6134.1152599-.19823.31765-.37104.6345899-.37104v-2.11718l-.6345899.47542c-.1049901.0792-.2523101.0694-.3457102-.0232zm4.0317999.0393-.3173.7927203h7.1556452l-.31729-.7927203zm-.4433898 1.3218912.0005291 2.63705c.0982.12335.15727.26777.19327.41186.0773.30939.0733.64479.0713.91984h1.0573001c.0456 0 .088.006.1297101.0191.2352498-.68453.7802899-1.23538 1.4691597-1.47485-.008-.045-.0114-.0846-.0114-.13177 0-.43524.35233-.79324.79375-.79324.44143 0 .79375.358.79375.79324 0 .0461-.003.0887-.0114.13281.76999.26737 1.35945.917 1.53995 1.72134.0208-.002.0366-.002.0579-.002.2054 0 .38996.0753.5302.20102.13968-.12592.32206-.20102.52762-.20102.0937 0 .18272.0162.26561.0455v-4.278821zm3.70365 2.11666c-.143051 0-.26458.11481-.26458.26407s.119469.2651.26458.2651c.14513 0 .26459-.11584.26459-.2651s-.12153-.26407-.26459-.26407zm-4.5495848 1.35961c-.0402.19171-.0766.40021-.16588.59738-.1017601.2323-.28697.40385-.55656.42375-.007.00037-.0136.000741-.0196.000503h-2.11512c-.14617.000597-.26509-.117883-.26562-.264053v-.52917h-2.38073v1.3224c0 .59089.47366 1.05834 1.05833 1.05833 2.1069801 0 4.7346799-.003 6.58617 0 .012901-.007.0481-.0729.0739-.15037.0579-.17366.0858-.39981.0858-.64234 0-.26528-.0336-.48832-.0858-.64492-.025799-.0775-.0558-.13138-.0718-.15038h-1.2970801c-.1453999-.000529-.26304-.11814-.2635498-.26355 0-.37362.010999-.79271-.0568-1.05834-.0271-.10829-.066-.184-.0977-.2191-.0317-.035-.0608-.045-.11166-.045-.0769.00001-.1239901.0179-.1772902.10958-.0662.11462-.0988.26356-.1390099.45528zm2.7326499.92968-.014999.076c.00201.005.003.011.005.016h1.5027499c.144219-.1609.35174-.26458.58807-.26458.20542 0 .38997.0753.5302.20102.13968-.12592.32207-.20102.52762-.20102.18902 0 .36069.0639.49609.17208-.13413-.68601-.64653-1.23361-1.30069-1.42162-.13809.118-.31965.19121-.51677.19121-.19497 0-.382281-.0728-.516926-.19173-.6551046.18904-1.166575.73792-1.3003449 1.42264zm6.3189899-.43977c-.0673-.000688-.13522.0246-.18861.078l-.0801.0801v.74724l.4532-.45216c.10688-.10688.0981-.27708 0-.37518-.0506-.0506-.11719-.0773-.18449-.078zm-4.50205 1.0604v.79479c0 .15115.11964.26406.26355.26406.1427 0 .26362-.11148.26562-.26251l-.000529-.7984c-.00003-.15104-.1224-.262-.265096-.262-.143905 0-.263545.1129-.263545.26406zm1.32137-.26406c-.1427 0-.26052.11148-.26252.26251v.7984c.002.15103.11982.262.26252.262.14392 0 .26617-.11291.26613-.26406-.000344-.26493-.000873-.52986 0-.79479.00004-.15116-.12221-.26406-.26613-.26406zm.7953.26406v.79479c0 .15115.11963.26406.26355.26406.1427 0 .26362-.11148.26562-.26251l-.000529-.7984c-.00004-.15103-.1224-.262-.265096-.262-.143915 0-.263545.1129-.263545.26406zm1.05885-.0015v.7984c.002.15103.11982.262.26252.262.14391 0 .26608-.11291.26613-.26406-.00008-.23703-.00025-.53029-.000529-.79737-.001-.14976-.12259-.26148-.265606-.26148-.142695 0-.260515.11148-.262515.26251zm-4.9066799.0021c.007.0876.011901.17642.011901.26562 0 .0888-.004.17645-.011401.26355h1.2014799v-.52917z" font-variant-ligatures="normal" font-variant-position="normal" font-variant-caps="normal" font-variant-numeric="normal" font-variant-alternates="normal" font-feature-settings="normal" text-indent="0" text-align="start" text-decoration-line="none" text-decoration-style="solid" text-decoration-color="rgb(0,0,0)" text-transform="none" text-orientation="mixed" white-space="normal" shape-padding="0" isolation="auto" mix-blend-mode="normal" solid-color="rgb(0,0,0)" solid-opacity="1" vector-effect="none" fill="currentColor" data-original="#000000" class=""/></g></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">Recieved</h3>
+                  <p class="lead mb-0 fs-sm">We have recieved your order.</p>
+                </div>
+              </div>
+            </li>
+            <li class="track-item active">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 407.007 407.007" style="enable-background:new 0 0 512 512;color: #2D2926;" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg"><g><g><path d="M271.422,30.844h-29.78c-3.716-0.115-6.909-2.67-7.837-6.269c-2.822-14.661-15.903-25.082-30.824-24.555     c-15.011-0.263-28.028,10.327-30.824,25.078c-0.966,3.5-4.209,5.878-7.837,5.747h-28.735v52.245h135.837V30.844z" fill="currentColor" data-original="#000000"/><path d="M355.014,382.974V83.611c0.032-11.83-9.533-21.446-21.363-21.478c-0.542-0.001-1.084,0.018-1.625,0.057h-44.931v26.645     c0,4.18-2.612,9.927-6.792,9.927H126.181c-4.18,0-6.269-5.747-6.269-9.927V62.191H74.981     c-11.798-0.866-22.065,7.997-22.93,19.796c-0.04,0.541-0.059,1.083-0.057,1.625v299.363     c-0.292,12.981,9.995,23.741,22.976,24.032c0.004,0,0.008,0,0.012,0h257.045c12.981-0.285,23.273-11.04,22.988-24.021     C355.014,382.982,355.014,382.978,355.014,382.974z M161.185,314.011l-40.751,38.139c-1.303,1.559-3.196,2.505-5.224,2.612     c-2.183-0.086-4.246-1.024-5.747-2.612l-21.42-21.943c-2.847-3.188-2.614-8.069,0.522-10.971c3.047-2.987,7.924-2.987,10.971,0     l15.673,16.718l35.527-33.437c3.562-2.458,8.443-1.564,10.901,1.998C163.643,307.421,163.457,311.309,161.185,314.011z      M161.185,230.419L161.185,230.419l-40.751,38.139c-1.303,1.559-3.196,2.505-5.224,2.612c-2.183-0.086-4.246-1.024-5.747-2.612     l-21.42-21.943c-2.847-3.188-2.614-8.069,0.522-10.971c3.047-2.987,7.924-2.987,10.971,0l15.673,16.718l35.527-33.437     c3.562-2.458,8.443-1.564,10.901,1.998C163.643,223.829,163.457,227.717,161.185,230.419z M161.185,146.827l-40.751,38.139     c-1.303,1.559-3.196,2.505-5.224,2.612c-2.183-0.086-4.246-1.024-5.747-2.612l-21.42-21.943     c-2.847-3.188-2.614-8.069,0.522-10.971c3.047-2.987,7.924-2.987,10.971,0l15.673,16.718l35.527-33.437     c3.562-2.458,8.443-1.564,10.901,1.998C163.643,140.237,163.457,144.125,161.185,146.827z M313.218,344.313H193.054     c-4.328,0-7.837-3.509-7.837-7.837s3.509-7.837,7.837-7.837h120.163c4.328,0,7.837,3.509,7.837,7.837     S317.546,344.313,313.218,344.313z M313.218,260.721H193.054c-4.328,0-7.837-3.509-7.837-7.837c0-4.328,3.509-7.837,7.837-7.837     h120.163c4.328,0,7.837,3.509,7.837,7.837C321.054,257.212,317.546,260.721,313.218,260.721z M313.218,177.129H193.054     c-4.328,0-7.837-3.509-7.837-7.837c0-4.328,3.509-7.837,7.837-7.837h120.163c4.328,0,7.837,3.509,7.837,7.837     C321.054,173.621,317.546,177.129,313.218,177.129z" fill="currentColor" data-original="#000000"/></g></g></g><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">Approved</h3>
+                  <p class="lead mb-0 fs-sm">Your order has been confirmed.</p>
+                </div>
+              </div>
+            </li>
+            <li class="track-item">
+              <button class="btn track-item" type="button">
+                <div class="track-item-status">
+                  <i class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 511.985 511.985"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <path
+                              d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                              fill="currentColor"
+                              data-original="#000000"
+                            />
+                          </g>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+                <div class="track-details">
+                  <div class="track-details-icon">
+                    <i>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;color: #2D2926;" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M507.109,483.5L28.501,4.891c-6.521-6.521-17.087-6.521-23.609,0c-6.521,6.516-6.521,17.092,0,23.609L483.5,507.108    c6.522,6.522,17.086,6.522,23.609,0C513.631,500.593,513.631,490.017,507.109,483.5z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M283.826,16.695h-55.652c-39.891,0-76.906,12.19-107.797,32.855l145.232,145.232h212.154    C469.25,95.182,385.593,16.695,283.826,16.695z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M53.924,124.749c-10.684,21.415-17.552,45.058-19.686,70.033h89.719L53.924,124.749z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M495.304,228.173H299l33.391,33.391h162.913c9.22,0,16.696-7.475,16.696-16.696S504.525,228.173,495.304,228.173z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M157.348,228.173H16.696C7.475,228.173,0,235.648,0,244.869s7.475,16.696,16.696,16.696h174.043L157.348,228.173z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M495.304,294.956H365.783l33.391,33.391h96.13c9.22,0,16.696-7.475,16.696-16.696S504.525,294.956,495.304,294.956z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M224.13,294.956H16.696C7.475,294.956,0,302.431,0,311.651s7.475,16.696,16.696,16.696h240.826L224.13,294.956z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M432.565,361.738l36.22,36.22c4.342-11.492,7.436-23.594,8.84-36.22H432.565z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"><g><path d="M290.913,361.738h-39.13l-61.891,61.891c-3.261,3.261-7.533,4.892-11.804,4.892s-8.544-1.631-11.804-4.892l-61.893-61.891    H34.375c8.34,75.016,72.067,133.565,149.277,133.565h144.696c27.562,0,53.337-7.566,75.557-20.573L290.913,361.738z" fill="currentColor" data-original="#000000"/></g></g><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg"/></g></svg>
+                    </i>
+                  </div>
+                  <div class="details-wrapper">
+                    <h3 class="h6 reset-align">Cancel</h3>
+                    <p class="lead mb-0 fs-sm">Cancel Your Current Order.</p>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="track-item">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;color: #2D2926;" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" d="m193.967 161.259-28.21-16.289c.232-1.354.359-2.753.359-4.172 0-10.593-6.717-19.646-16.117-23.123v-51.084c0-4.715-3.82-8.535-8.533-8.535-4.712 0-8.533 3.819-8.533 8.535v51.083c-9.398 3.477-16.117 12.53-16.117 23.123 0 13.592 11.059 24.654 24.65 24.654 5.984 0 11.476-2.144 15.752-5.707l28.216 16.295c1.344.77 2.811 1.142 4.26 1.142 2.949 0 5.817-1.535 7.397-4.267 2.355-4.081.957-9.3-3.124-11.655zm-52.501-12.877c-4.181 0-7.583-3.402-7.583-7.584s3.402-7.583 7.583-7.583c4.183 0 7.584 3.402 7.584 7.583 0 4.182-3.401 7.584-7.584 7.584zm155.856 77.291v20.426c-6.422-.609-12.921-.936-19.492-.936-6.572 0-13.072.327-19.495.936v-20.426c0-10.749 8.746-19.5 19.495-19.5 10.748 0 19.492 8.751 19.492 19.5zm-155.856 55.924c-77.637 0-140.798-63.156-140.798-140.799s63.161-140.799 140.798-140.799 140.801 63.156 140.801 140.799c0 16.738-2.9 33.047-8.608 48.557-8.553.981-16.217 4.917-21.942 10.759 9.544-17.663 14.967-37.863 14.967-59.316 0-69.043-56.172-125.214-125.218-125.214-69.045 0-125.216 56.171-125.216 125.214 0 69.048 56.171 125.214 125.216 125.214 41.959 0 79.161-20.743 101.895-52.507-1.348 3.804-2.092 7.901-2.092 12.168v22.761c-28.204 5.103-54.526 15.978-77.78 31.437-7.282 1.142-14.679 1.726-22.023 1.726zm61.276-51.732-2.661-4.604c-2.359-4.091-7.578-5.486-11.659-3.13-4.081 2.36-5.479 7.574-3.124 11.66l2.679 4.64c-11.665 5.581-24.476 9.124-37.978 10.186v-5.374c0-4.705-3.82-8.535-8.533-8.535-4.712 0-8.533 3.83-8.533 8.535v5.374c-13.501-1.062-26.313-4.604-37.978-10.186l2.679-4.64c2.357-4.086.958-9.3-3.124-11.66-4.08-2.356-9.3-.961-11.657 3.13l-2.662 4.604c-10.865-7.498-20.294-16.929-27.79-27.788l4.612-2.662c4.081-2.36 5.478-7.574 3.122-11.66-2.357-4.076-7.574-5.475-11.657-3.125l-4.637 2.677c-5.581-11.66-9.132-24.472-10.189-37.974h5.369c4.712 0 8.533-3.819 8.533-8.535 0-4.715-3.821-8.535-8.533-8.535h-5.369c1.057-13.502 4.608-26.314 10.189-37.969l4.637 2.677c1.345.765 2.811 1.142 4.26 1.142 2.948 0 5.817-1.54 7.397-4.272 2.357-4.081.959-9.3-3.122-11.655l-4.612-2.667c7.495-10.86 16.925-20.29 27.79-27.789l2.662 4.61c1.581 2.743 4.448 4.277 7.4 4.277 1.447 0 2.915-.372 4.257-1.152 4.081-2.36 5.481-7.573 3.124-11.66l-2.679-4.64c11.665-5.576 24.478-9.118 37.978-10.185v5.375c0 4.715 3.822 8.535 8.533 8.535 4.714 0 8.533-3.82 8.533-8.535v-5.375c13.503 1.067 26.314 4.61 37.978 10.185l-2.679 4.64c-2.355 4.086-.958 9.3 3.124 11.66 1.344.78 2.812 1.152 4.259 1.152 2.949 0 5.817-1.535 7.4-4.277l2.661-4.61c10.863 7.498 20.295 16.929 27.789 27.789l-4.611 2.667c-4.081 2.355-5.478 7.574-3.122 11.655 1.579 2.732 4.447 4.272 7.397 4.272 1.449 0 2.915-.378 4.258-1.142l4.639-2.677c5.579 11.655 9.131 24.467 10.188 37.969h-5.368c-4.714 0-8.533 3.819-8.533 8.535 0 4.715 3.819 8.535 8.533 8.535h5.368c-1.057 13.502-4.609 26.314-10.188 37.974l-4.639-2.677c-4.081-2.36-9.3-.951-11.655 3.125-2.356 4.086-.959 9.3 3.122 11.66l4.611 2.662c-7.494 10.859-16.926 20.29-27.789 27.788zm-120.793 236.735c0 1.792.031 3.608.078 5.43h391.603c.049-1.842.081-3.659.081-5.43 0-112.694-87.873-204.372-195.881-204.372-108.01-.001-195.881 91.678-195.881 204.372zm395.056 45.401h-398.354c-16.31 0-30.096-9.707-34.324-22.907h467.005c-4.227 13.2-18.015 22.907-34.327 22.907zm-190.642-204.684c0 4.705-3.82 8.53-8.534 8.53-47.093 0-80.885 24.699-100.941 45.422-25.193 26.027-36.525 54.067-36.525 65.677 0 4.71-3.82 8.53-8.533 8.53-4.712 0-8.533-3.819-8.533-8.53 0-20.517 16.995-52.406 41.329-77.548 31.594-32.639 71.795-50.615 113.204-50.615 4.714-.001 8.533 3.819 8.533 8.534z" fill-rule="evenodd" fill="currentColor" data-original="#000000"/></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">Prepared</h3>
+                  <p class="lead mb-0 fs-sm">Your order has been prepared.</p>
+                </div>
+              </div>
+            </li>
+            <!-- [ Incase Of TakeAway ] -->
+            <!-- <li class="track-item">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m252.686 120 32-32h-228.686c-3.262 0-8 6.233-8 16s4.738 16 8 16z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m290.11 181.826a35.227 35.227 0 0 1 -51.897-45.826h-168.235l-37.3 126.271a24.077 24.077 0 0 0 -.678 5.668v220.061h264v-220.061a40.073 40.073 0 0 1 1.193-9.7c.028-.109.058-.219.09-.328l31.317-106.022zm-130.11 114.174h-.015a7.974 7.974 0 0 1 -.83 3.578l-15.019 30.039 6.619 92.673a24 24 0 0 1 -23.939 25.71h-13.632a24 24 0 0 1 -23.939-25.71l6.619-92.673-15.019-30.039a7.974 7.974 0 0 1 -.83-3.578h-.015v-32a8 8 0 0 1 16 0v24h16v-24a8 8 0 0 1 16 0v24h16v-24a8 8 0 0 1 16 0zm72.115 144.1a24.043 24.043 0 0 1 -17.8 7.9h-12.635a24 24 0 0 1 -23.88-26.388l6.2-62.012v-2.66l-11.578-5.789a8 8 0 0 1 -4.4-7.754c.268-3.564 7.118-87.397 55.978-87.397a8 8 0 0 1 8 8v95.6l6.2 62.008a24.038 24.038 0 0 1 -6.085 18.492z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m432 24h48v88h-48z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m235.945 43.324-52.571 28.676h120.626a8 8 0 0 1 5.657 13.657l-54.768 54.769a19.226 19.226 0 0 0 25.4 28.771l49.927-38.832a11.282 11.282 0 0 1 6.891-2.365h19.666a27.258 27.258 0 0 0 27.227-27.227 12.788 12.788 0 0 1 12.773-12.773h19.227v-48h-167.018a27.3 27.3 0 0 0 -13.037 3.324z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m128.551 336h-17.1l-6.251 87.431a8 8 0 0 0 7.98 8.569h13.632a8 8 0 0 0 7.98-8.569z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m200 352h16v-78.542c-9.86 3.757-17.938 14.762-24.086 32.853a175.605 175.605 0 0 0 -7.365 33.019l11.029 5.515a8 8 0 0 1 4.422 7.155z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m108.944 320h22.112l8-16h-38.112z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m323.314 488h41.372l-20.686-20.686z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m216.76 368h-17.52l-5.521 55.2a8 8 0 0 0 7.961 8.8h12.64a8 8 0 0 0 7.961-8.8z" fill="currentColor" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m312.679 262.271a24.077 24.077 0 0 0 -.679 5.668v208.747l24-24v-172.686a8 8 0 0 1 16 0v172.686l24 24v-208.078a23.947 23.947 0 0 0 -.975-6.769l-31.042-105.544z" fill="currentColor" data-original="#000000"/></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">Ready to Pickup</h3>
+                  <p class="lead mb-0 fs-sm">Your order is ready for pickup.</p>
+                </div>
+              </div>
+            </li> -->
+            
+            <!-- [ Incase Of Delievery ] -->
+            <li class="track-item">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512;color: #2D2926;" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="main"><path d="m4.00023 16.00076h14.00112a3.00016 3.00016 0 0 1 3.00016 3.00016v11.00054a3.00023 3.00023 0 0 1 -3.00023 3.00023h-14.00112a3.00016 3.00016 0 0 1 -3.00016-3.00016v-11.00053a3.00023 3.00023 0 0 1 3.00023-3.00023z" fill="currentColor" data-original="#000000"/><circle cx="33.002" cy="7" r="5" fill="currentColor" data-original="#000000"/><path d="m12.00278 35.85243a5.917 5.917 0 0 0 1.70008 4.14964h16.25685v-4.155a.99574.99574 0 0 0 -.99568-.99566h-15.96556a1.00034 1.00034 0 0 0 -.99569 1.00102z" fill="currentColor" data-original="#000000"/><path d="m61.73652 51.35865a8.13051 8.13051 0 0 0 -8.32191-5.9938 7.03825 7.03825 0 0 0 .24025-1.79081 5.92507 5.92507 0 0 0 -2.65352-4.82448c-2.14763-1.42439-3.75322-5.04715-3.99591-8.8579h1.91518a2.99026 2.99026 0 0 0 2.99144-2.9821v-1.98595a2.98984 2.98984 0 0 0 -2.99144-2.98161h-6.83944c-5.78242-1.66525-7.522-3.58314-8.56162-4.73219-.02149-.02344-.04249-.04687-.063-.06982a3.706 3.706 0 0 0 -2.01773-3.8132 3.63989 3.63989 0 0 0 -5.12148 2.49672l-2.86934 13.71022a2.98251 2.98251 0 0 0 2.59834 3.57148l4.91638.544a.994.994 0 0 1 .88777 1.04253l-.77485 13.10586a5.27317 5.27317 0 0 1 -1.477-5.79542h-15.28538c-1.61236 2.6708-4.19312 7.67864-3.14892 10.93614a4.03906 4.03906 0 0 0 2.6086 2.62124 3.72615 3.72615 0 0 0 1.38957.15089 6.4063 6.4063 0 0 0 12.78118-.00019l17.13972-.00026a1.262 1.262 0 0 0 .87507-.423 6.99728 6.99728 0 0 0 .587 1.70334.99551.99551 0 0 0 1.71595.13917c.11616-.16712.24264-.33034.37552-.491a6.40049 6.40049 0 1 0 12.48442-2.71751.98582.98582 0 0 0 .87445-1.075 7.76275 7.76275 0 0 0 -.2593-1.48735zm-40.1837 8.31835a4.40655 4.40655 0 0 1 -4.38442-3.96659l8.76934-.00012a4.407 4.407 0 0 1 -4.38492 3.96671zm19.38718-10.92348h-3.88491l1.71778-16.23965a2.98154 2.98154 0 0 0 -1.92587-3.10417l-4.90033-1.8287a.99167.99167 0 0 1 -.62211-1.1485l.74566-3.215a17.07769 17.07769 0 0 0 8.86978 3.6323zm14.58609 11.21888a4.41268 4.41268 0 0 1 -4.96131-4.86111l.30465-.37917a11.08251 11.08251 0 0 1 7.67557-1.50985l.23622.18239a4.40049 4.40049 0 0 1 -3.25513 6.56774z" fill="currentColor" data-original="#000000"/></g></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">On the way</h3>
+                  <p class="lead mb-0 fs-sm">Your order is on its way.</p>
+                </div>
+              </div>
+            </li>
+            <li class="track-item">
+              <div class="track-item-status">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 511.985 511.985"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M500.088,83.681c-15.841-15.862-41.564-15.852-57.426,0L184.205,342.148L69.332,227.276    c-15.862-15.862-41.574-15.862-57.436,0c-15.862,15.862-15.862,41.574,0,57.436l143.585,143.585    c7.926,7.926,18.319,11.899,28.713,11.899c10.394,0,20.797-3.963,28.723-11.899l287.171-287.181    C515.95,125.265,515.95,99.542,500.088,83.681z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+              </div>
+              <div class="track-details">
+                <div class="track-details-icon">
+                  <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="Shipping_product" data-name="Shipping product"><path d="m25 1h4v4h-4z" fill="currentColor" data-original="#000000"/><path d="m37 21v-18a2 2 0 0 0 -2-2h-4v5a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1-1v-5h-6v22h18a2 2 0 0 0 2-2zm-14-1h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2z" fill="currentColor" data-original="#000000"/><path d="m13 23h2v-22h-2a2 2 0 0 0 -2 2v18a2 2 0 0 0 2 2z" fill="currentColor" data-original="#000000"/><path d="m46 25.25a4 4 0 0 0 -5.44.6c-8.09 9.44-7.9 9.32-8 9.32l-1.56 1.83h-11a1 1 0 0 1 0-2h11a4 4 0 0 0 -4-4h-5c-3.89-2.59-7.8-2.53-11-.6v14c1.82.85 1.54.62 18.78.62a8 8 0 0 0 6.6-3.48l10.62-15.54z" fill="currentColor" data-original="#000000"/><rect height="20" rx="2" width="8" x="1" y="27" fill="currentColor" data-original="#000000"/></g></g></svg>
+                  </i>
+                </div>
+                <div class="details-wrapper">
+                  <h3 class="h6">Delivered</h3>
+                  <p class="lead mb-0 fs-sm">
+                    Your order is delivered successfully.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="track-order-btn-options">
+            <button
+              class="btn btn-dark-main"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#renameOrderModal"
+              >Add To Favourites</button>
+            <a href="./menu.html" class="btn btn-main pulse-btn">Explore Menu</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rate Order Modal -->
+    <div
+      class="modal fade rating-modal"
+      id="rateOrderModal"
+      tabindex="-1"
+      aria-labelledby="rateOrderModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body py-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center text-center"
+              >
+              <img
+                src="assets/images/icons/smile-shape.png"
+                alt="smile shape"
+                width="180"
+                height="180"
+                class="rating-modal-image"
+              />
+              <h3 class="mb-3">Your opinion matter to us!</h3>
+              <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+              <form class="mb-3">
+                <div class="rating_stars" data-rated="0"></div>
+                <button type="submit" class="btn btn-main mt-3 mx-auto">
+                  rate order
+                </button>
+              </form>
+              <button
+                type="button"
+                class="btn btn-gray"
+                data-bs-dismiss="modal"
+                >
+                Not Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rename Order Modal -->
+    <div
+      class="modal fade forgot-password-modal"
+      id="renameOrderModal"
+      tabindex="-1"
+      aria-labelledby="renameOrderModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 text-uppercase" id="locatorModalLabel">
+              Rename Order
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <form>
+              <div class="form-group mb-3">
+                <label class="mb-1 fs-6" for="renameOrder"
+                  >Rename Your Favourite Order</label
+                >
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control px-3"
+                    name="renameOrder"
+                    placeholder="Enter Your Prefared Naming"
+                    id="renameOrder"
+                  />
+                </div>
+              </div>
+              <div class="row mx-0 g-3 justify-content-end">
+                <div class="col-auto">
+                  <button type="button" class="btn btn-dark-main" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-main mx-auto">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugins Scripts -->
+    <script src="./assets/js/common_scripts.min.js"></script>
+    <script src="./assets/js/star-rating/js/jquery-rates.js" defer></script>
+    <!-- Custom Scripts -->
+    <script src="./assets/js/pages/track-order.js" defer></script>
+
+    <script>
+      const preloader = $("#simplePreloader");
+
+      $(function () {
+        if (preloader.length !== 0) {
+          preloader.slideUp(400);
+        }
+      });
+    </script>
+  </body>
+</html>

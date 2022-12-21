@@ -1,0 +1,15 @@
+.min-height {
+  min-height: 75vh;
+}
+body {
+  counter-reset: section;
+}
+.numbered-header::before {
+  content: counter(section) " - ";
+  counter-increment: section;
+}
+@media (min-width: 992px) {
+  p {
+    width: 75%;
+  }
+}

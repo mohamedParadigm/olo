@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Texas Chicken Delivery - takeaway</title>
+    <!-- Favicons-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Texas logo.svg"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      href="./assets/images/favicon/favicon.png"
+    /> -->
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/js/jquery-wizard-master/css/jquery.steps.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/pages/order.css" />
+    <!-- Preload Style -->
+    <style>
+      .simple-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999999999999999999;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #9a3324;
+        border-color: #9a3324 #9a3324 #9a3324 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="simplePreloader" class="simple-preloader">
+      <div class="lds-dual-ring"></div>
+    </div>
+
+    <main class="app">
+      <!-- Header -->
+      <header class="bg-white">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <a href="./index.html" class="d-flex">
+              <img
+                src="./assets/images/Texas logo.svg"
+                alt="Logo"
+                width="80"
+                height="80"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="flex-grow-1">
+        <div class="container py-4">
+          <div class="order-wrapper">
+            <div class="order-details">
+              <div id="wizard">
+                <h2>Locations</h2>
+                <section>
+                  <div class="box_order_form px-2 py-3 mb-3">
+                    <div class="row mx-0 align-items-center mb-2">
+                      <div class="col">
+                        <p class="mb-0">Sign In to pick from saved locations</p>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          type="button"
+                          class="btn btn-main pulse-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#loginModal"
+                        >
+                          Sign In
+                        </button>
+                      </div>
+                    </div>
+                    <hr class="divider  bg-dark" />
+                    <h3 class="h6 text-transform-uppercase my-3 px-2">
+                      Terms and Conditions
+                    </h3>
+                    <ul class="styled-list d-block px-4 px-lg-5 opacity-75">
+                      <li>
+                        Catering package is valid for a minimum order of 50 packs and
+                        above.
+                      </li>
+                      <li>
+                        Full payment must be paid at least 7 days before the event /
+                        function date.
+                      </li>
+                      <li>
+                        For corporate customer, official PO is required to confirm the
+                        bookings for orders above 300 pax.
+                      </li>
+                      <li>
+                        Transportation / Delivery charges of RM30.00 for orders below
+                        300 packs applies.
+                      </li>
+                      <li>
+                        The Catering Sets above will not be valid at KLCC,
+                        gateway@klia2 and Genting Highland outlets.
+                      </li>
+                      <li>
+                        Catering set is not valid with other promotions and discounted
+                        offers.
+                      </li>
+                      <li>
+                        All food will NOT be PIPING HOT upon prepacking them – but we
+                        assure you of the Quality in terms of Taste, Flavour and
+                        Hygiene.s
+                      </li>
+                      <li>
+                        Products that are sensitive to temperature is not recommended
+                        for bulk catering – example Fries, Rice, Wraps, Coleslaw,
+                        Desserts, Shortcakes &amp; Chocolate Volcano.
+                      </li>
+                      <li>
+                        Texas Chicken Malaysia reserves the right to amend the above
+                        terms and conditions without prior notice.
+                      </li>
+                    </ul>
+                    <!-- <label for="terms_conditions" class="custom-check d-flex px-2">
+                      <div class="check-mark-wrapper">
+                        <input type="checkbox" name="remember-me" id="terms_conditions" />
+                        <span class="check-mark"></span>
+                      </div>
+                      <span class="fs-6">Accept Terms & Conditions</span>
+                    </label> -->
+                  </div>
+                  <div class="box_order_form mb-3">
+                    <div class="head">
+                      <h3 class="mb-0 h6">Continue As a Guest</h3>
+                    </div>
+                    <div class="p-3">
+                      <div class="row mx-0 g-3">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="Area"
+                              disabled="disabled"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="City"
+                              disabled="disabled"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="Building Number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-control" placeholder="Floor" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="Flat Number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="Street Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              class="form-control"
+                              autocapitalize="none"
+                              name="ion-input-0"
+                              placeholder="Delivery Instructions"
+                              spellcheck="false"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h2>Details</h2>
+                <section>
+                  <div class="box_order_form mb-3">
+                    <div class="head">
+                      <h3 class="mb-0 h6">Personal Details</h3>
+                    </div>
+                    <div class="p-3">
+                      <div class="row mx-0 g-3">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>First Name</label>
+                            <input
+                              class="form-control"
+                              placeholder="First and Last Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Last Name</label>
+                            <input
+                              class="form-control"
+                              placeholder="First and Last Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Email Address</label>
+                            <input
+                              class="form-control"
+                              placeholder="Email Address"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Phone</label>
+                            <input class="form-control" placeholder="Phone" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h2>Submit Order</h2>
+                <section>
+                  <div class="box_order_form mb-3">
+                    <div class="head">
+                      <h3 class="mb-0 h6">Thank You</h3>
+                    </div>
+                    <div class="p-3">
+                      <!-- <div class="row mx-0 g-4 py-2 justify-content-center">
+                        <div class="col-auto">
+                          <label
+                            for="cashMethod"
+                            class="custom-radio radio-with-icon"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="paymentMethods"
+                                id="cashMethod"
+                                checked
+                              />
+                              <span class="radio-mark"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 512.004 512.004"
+                                style="
+                                  enable-background: new 0 0 512 512;
+                                  color: #2d2926;
+                                "
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Layer_2_3_">
+                                      <g id="fill_solid_2_">
+                                        <path
+                                          d="m453.579 369.324v29.094c-.058 13.863-6.692 26.883-17.893 35.059 2.153-6.633 3.273-13.543 3.346-20.511v-43.641h14.547z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m494.311 232.581-34.913-26.185c-3.389-2.968-5.47-7.143-5.819-11.638v-29.094c-.669-25.196-21.646-45.096-46.842-44.427-2.444.058-4.873.32-7.274.786l6.692 26.621c20.497 13.369 32.862 36.193 32.876 60.661v29.095h29.094c8.03 0 14.547 6.517 14.547 14.547s-6.517 14.547-14.547 14.547h-87.283c-8.03 0-14.547 6.517-14.547 14.547v43.641c0 8.03 6.517 14.547 14.547 14.547h87.283c24.075-.073 43.569-19.566 43.641-43.641.03-21.835 3.536-49.911-17.455-64.007zm-91.647 85.828c-8.03 0-14.547-6.517-14.547-14.547s6.517-14.547 14.547-14.547 14.547 6.517 14.547 14.547-6.517 14.547-14.547 14.547z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m373.424 137.298c-8.263-.756-16.584-1.004-24.876-.727l-4.073-16.438 28.076 13.965z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m363.241 97.002-28.076-14.111-1.163-4.509 22.257-9.31z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m306.071 86.674-43.35-14.547 35.64-16.73z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m337.202 282.041v43.641c.073 24.075 19.566 43.569 43.641 43.641h29.094v43.641c-.073 24.075-19.566 43.569-43.641 43.641h-322.655c-24.075-.071-43.568-19.564-43.641-43.64v-203.66c.073-24.075 19.566-43.569 43.641-43.641h322.655c24.075.073 43.569 19.566 43.641 43.641v29.095h-29.094c-24.075.073-43.568 19.566-43.641 43.641z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m318.582 136.57h-192.75l100.23-47.133c1.353 1.222 2.939 2.168 4.655 2.764l83.791 27.93z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m88.446 122.023-30.84 14.547h-13.965c-5.688.058-11.361.786-16.875 2.182 8.205-10.474 20.73-16.627 34.04-16.729z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Cash on Delivery</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label
+                            for="creditCard"
+                            class="custom-radio radio-with-icon"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="paymentMethods"
+                                id="creditCard"
+                              />
+                              <span class="radio-mark"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 32 32"
+                                style="
+                                  enable-background: new 0 0 512 512;
+                                  color: #2d2926;
+                                "
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    clip-rule="evenodd"
+                                    d="m2 9c0-1.65685 1.34315-3 3-3h22c1.6569 0 3 1.34315 3 3v1h-28zm0 3h28v11c0 1.6569-1.3431 3-3 3h-22c-1.65685 0-3-1.3431-3-3zm16 7c-.5523 0-1 .4477-1 1s.4477 1 1 1h6c.5523 0 1-.4477 1-1s-.4477-1-1-1z"
+                                    fill="currentColor"
+                                    fill-rule="evenodd"
+                                    data-original="#000000"
+                                  />
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Credit Card</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label
+                            for="onlinePayment"
+                            class="custom-radio radio-with-icon"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="paymentMethods"
+                                id="onlinePayment"
+                              />
+                              <span class="radio-mark"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 64 64"
+                                style="enable-background: new 0 0 512 512"
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <g
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="Business-Management-Operation-Smartphone-Hand"
+                                  >
+                                    <path
+                                      d="m4 28h2v-11.586l1.293 1.293 1.414-1.414-3-3a1 1 0 0 0 -1.414 0l-3 3 1.414 1.414 1.293-1.293z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m50 16.414v11.586h2v-11.586l1.293 1.293 1.414-1.414-3-3a1 1 0 0 0 -1.414 0l-3 3 1.414 1.414z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m38 4h-20a5 5 0 0 0 -5 5v35.66l3.44-5.95a4 4 0 1 1 6.93 4l-4.21 7.28.01.01h8.64a4.247 4.247 0 0 1 .59-.43 4.038 4.038 0 0 1 3.04-.4 4.084 4.084 0 0 1 1.55.83h1.01v-14a4 4 0 0 1 8 0v8.54a3.974 3.974 0 0 1 1-.41v-35.13a5 5 0 0 0 -5-5zm-14 2h8v2h-8zm-4 0h2v2h-2zm10 42h-4a3 3 0 0 1 0-6h4a3 3 0 0 1 0 6zm-2-14a10 10 0 1 1 10-10 10.016 10.016 0 0 1 -10 10z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m30 44h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m28 16a8 8 0 1 0 8 8 8.011 8.011 0 0 0 -8-8zm-1 7h2a3 3 0 0 1 0 6v1h-2v-1a3.009 3.009 0 0 1 -3-3h2a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2h-2a3 3 0 0 1 0-6v-1h2v1a3.009 3.009 0 0 1 3 3h-2a1 1 0 0 0 -1-1h-2a1 1 0 0 0 0 2z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m17.13 49.5a1.031 1.031 0 0 0 .01 1.02l2.14 3.56a4.987 4.987 0 0 1 .72 2.57v4.35h-14v-17.81a9.038 9.038 0 0 1 .83-3.76l4.17-9.05v14.62a6.922 6.922 0 0 0 .43 2.39l-.99 1.71 1.73 1 6-10.39a2 2 0 0 1 1.21-.94 2.06 2.06 0 0 1 1.52.2 2.009 2.009 0 0 1 .73 2.74z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m58 50v11h-25.31l-4.02-6.96a2 2 0 0 1 2.25-2.94 1.942 1.942 0 0 1 1.21.94l2 3.46a1.022 1.022 0 0 0 1.13.47 1 1 0 0 0 .74-.97v-19a2 2 0 0 1 4 0v16a1 1 0 0 0 2 0v-4a2 2 0 0 1 4 0v4a1 1 0 0 0 2 0v-3a2 2 0 0 1 4 0v3a1 1 0 0 0 2 0v-2a2 2 0 0 1 4 0z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m50 30h2v2h-2z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m50 34h2v2h-2z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m4 30h2v2h-2z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Online Payment</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label
+                            for="googlePay"
+                            class="custom-radio radio-with-icon"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="paymentMethods"
+                                id="googlePay"
+                              />
+                              <span class="radio-mark"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 512 512"
+                                style="
+                                  enable-background: new 0 0 512 512;
+                                  color: #2d2926;
+                                "
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                      <path
+                                        d="M113.597,193.064l-87.204-50.347C9.543,176.768,0.001,215.17,0,255.998c0,40.263,9.645,78.731,26.754,113.084    l86.837-50.135c-8.565-19.286-13.418-40.558-13.417-62.949C100.175,233.608,105.031,212.343,113.597,193.064z"
+                                        fill="currentColor"
+                                        data-original="#000000"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                      <path
+                                        d="M423.925,62.768C378.935,23.634,320.145-0.043,255.823,0C167.822,0.059,89.276,44.985,43.127,113.824l87.275,50.39    c28.381-38.714,74.04-64.041,125.601-64.04c37.587,0.001,72.042,13.437,98.954,35.701c6.588,5.449,16.218,4.95,22.263-1.095    l47.531-47.531C431.605,80.395,431.238,69.128,423.925,62.768z"
+                                        fill="currentColor"
+                                        data-original="#000000"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                      <path
+                                        d="M510.247,226.38c-0.997-8.475-8.122-14.89-16.653-14.89l-209.767-0.011c-9.22,0-16.696,7.475-16.696,16.696v66.727    c0,9.22,7.475,16.696,16.696,16.696h117.548c-10.827,28.179-29.633,52.403-53.575,70.013l49.928,86.478    c50.256-34.056,88.467-85.547,105.297-146.331C512.175,288.709,513.822,256.751,510.247,226.38z"
+                                        fill="currentColor"
+                                        data-original="#000000"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                      <path
+                                        d="M318.93,398.381c-19.255,8.578-40.511,13.444-62.927,13.446c-51.619,0.001-97.252-25.327-125.613-64.026l-86.903,50.174    C89.249,466.137,166.915,512,256.001,512c40.272,0,78.603-9.845,112.889-27.084L318.93,398.381z"
+                                        fill="currentColor"
+                                        data-original="#000000"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                  <g xmlns="http://www.w3.org/2000/svg" />
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Google Pay</span>
+                          </label>
+                        </div>
+                        <div class="col-auto">
+                          <label
+                            for="applePay"
+                            class="custom-radio radio-with-icon"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="paymentMethods"
+                                id="applePay"
+                              />
+                              <span class="radio-mark"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 512 512"
+                                style="
+                                  enable-background: new 0 0 512 512;
+                                  color: #2d2926;
+                                "
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <g xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                      <g>
+                                        <path
+                                          d="m96.766 175.412c6.028-7.54 10.118-17.663 9.04-28.008-8.824.439-19.592 5.822-25.826 13.367-5.598 6.462-10.552 17.009-9.26 26.92 9.904.859 19.801-4.951 26.046-12.279"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m105.693 189.626c-14.385-.857-26.616 8.164-33.486 8.164-6.873 0-17.393-7.732-28.771-7.524-14.809.218-28.55 8.591-36.065 21.908-15.457 26.641-4.079 66.159 10.952 87.856 7.299 10.734 16.097 22.554 27.688 22.129 10.952-.43 15.245-7.092 28.557-7.092 13.303 0 17.17 7.092 28.763 6.877 12.023-.215 19.539-10.74 26.838-21.485 8.374-12.237 11.802-24.052 12.017-24.701-.216-.215-23.183-9.026-23.396-35.445-.217-22.121 18.032-32.644 18.891-33.296-10.304-15.24-26.406-16.959-31.988-17.391"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                      <g>
+                                        <path
+                                          d="m230.948 159.688c31.266 0 53.037 21.552 53.037 52.93 0 31.49-22.22 53.154-53.821 53.154h-34.617v55.051h-25.011v-161.135zm-35.402 85.09h28.698c21.776 0 34.169-11.724 34.169-32.048 0-20.322-12.393-31.936-34.057-31.936h-28.81z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m290.52 287.436c0-20.548 15.745-33.166 43.664-34.729l32.158-1.898v-9.044c0-13.065-8.822-20.882-23.559-20.882-13.962 0-22.672 6.699-24.791 17.197h-22.78c1.34-21.218 19.428-36.851 48.463-36.851 28.474 0 46.675 15.075 46.675 38.636v80.958h-23.116v-19.318h-.556c-6.811 13.066-21.664 21.328-37.073 21.328-23.004 0-39.085-14.294-39.085-35.397zm75.821-10.608v-9.268l-28.922 1.786c-14.405 1.006-22.556 7.371-22.556 17.421 0 10.272 8.486 16.973 21.44 16.973 16.861-.002 30.038-11.615 30.038-26.912z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                        <path
+                                          d="m412.172 364.039v-19.542c1.784.446 5.803.446 7.814.446 11.166 0 17.197-4.689 20.88-16.749 0-.224 2.124-7.147 2.124-7.259l-42.432-117.585h26.127l29.707 95.587h.444l29.707-95.587h25.457l-44 123.614c-10.046 28.477-21.66 37.633-46.003 37.633-2.011 0-8.042-.224-9.825-.558z"
+                                          fill="currentColor"
+                                          data-original="#000000"
+                                        />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Apple Pay</span>
+                          </label>
+                        </div>
+                      </div> -->
+                      <p class="lead mb-0">
+                        One of our representatives will get in touch with you soon.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="order-summary">
+              <div class="price-details">
+                <div class="head border-bottom p-3">
+                  <h3 class="h6 mb-0">Order Summary</h3>
+                </div>
+                <div class="p-3">
+                  <div class="custom-height">
+                    <ul class="cart-items" id="meal_wrapper">
+                      <li
+                        class="mb-2 collapsed btn accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#meal_1"
+                        aria-expanded="false"
+                        aria-controls="meal_1"
+                      >
+                        <div class="row mx-0 g-3 align-items-center">
+                          <div class="col-auto">
+                            <img
+                              src="./assets/images/location_list_placeholder.png"
+                              data-src="./assets/images/mexicana meal.png"
+                              alt=""
+                              class="lazy img-contain"
+                              width="60"
+                              height="60"
+                            />
+                          </div>
+                          <div class="col">
+                            <h4 class="h6 mb-0 fs-sm">Chicken burger sandwich</h4>
+                          </div>
+                          <div class="col-auto">88 AED</div>
+                        </div>
+                      </li>
+                      <li
+                        class="collapse px-3"
+                        id="meal_1"
+                        data-bs-parent="#meal_wrapper"
+                      >
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center mb-1"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center mb-1"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                      </li>
+                      <li
+                        class="collapsed btn accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#meal_2"
+                        aria-expanded="false"
+                        aria-controls="meal_2"
+                      >
+                        <div class="row mx-0 g-3 align-items-center">
+                          <div class="col-auto">
+                            <img
+                              src="./assets/images/location_list_placeholder.png"
+                              data-src="./assets/images/Catering-menu-websit-04.png"
+                              alt=""
+                              class="lazy"
+                              width="60"
+                              height="60"
+                            />
+                          </div>
+                          <div class="col">
+                            <h4 class="h6 mb-0 fs-sm">Chicken burger sandwich</h4>
+                          </div>
+                          <div class="col-auto">88 AED</div>
+                        </div>
+                      </li>
+                      <li
+                        class="collapse px-3"
+                        id="meal_2"
+                        data-bs-parent="#meal_wrapper"
+                      >
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center mb-1"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center mb-1"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                        <div
+                          class="d-flex g1 justify-content-between align-items-center"
+                        >
+                          <p class="mb-0 lead fs-sm">1 x sandwich</p>
+                          <p class="mb-0 lead fs-sm">12 AED</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- <div class="divider"></div> -->
+                    <!-- <div id="delivery_wrapper">
+                      <ul class="row mx-0 g-3 justify-content-center">
+                        <li class="col-auto">
+                          <label
+                            for="deliveryOption"
+                            class="custom-radio radio-with-icon"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#dummyDiv"
+                            aria-expanded="false"
+                            aria-controls="dummyDiv"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="order_options"
+                                id="deliveryOption"
+                                checked
+                              />
+                              <span class="radio-mark"></span>
+                              <span class="test"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 64 64"
+                                style="
+                                  enable-background: new 0 0 512 512;
+                                  color: #2d2926;
+                                "
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <g xmlns="http://www.w3.org/2000/svg" id="main">
+                                    <path
+                                      d="m4.00023 16.00076h14.00112a3.00016 3.00016 0 0 1 3.00016 3.00016v11.00054a3.00023 3.00023 0 0 1 -3.00023 3.00023h-14.00112a3.00016 3.00016 0 0 1 -3.00016-3.00016v-11.00053a3.00023 3.00023 0 0 1 3.00023-3.00023z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <circle
+                                      cx="33.002"
+                                      cy="7"
+                                      r="5"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m12.00278 35.85243a5.917 5.917 0 0 0 1.70008 4.14964h16.25685v-4.155a.99574.99574 0 0 0 -.99568-.99566h-15.96556a1.00034 1.00034 0 0 0 -.99569 1.00102z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                    <path
+                                      d="m61.73652 51.35865a8.13051 8.13051 0 0 0 -8.32191-5.9938 7.03825 7.03825 0 0 0 .24025-1.79081 5.92507 5.92507 0 0 0 -2.65352-4.82448c-2.14763-1.42439-3.75322-5.04715-3.99591-8.8579h1.91518a2.99026 2.99026 0 0 0 2.99144-2.9821v-1.98595a2.98984 2.98984 0 0 0 -2.99144-2.98161h-6.83944c-5.78242-1.66525-7.522-3.58314-8.56162-4.73219-.02149-.02344-.04249-.04687-.063-.06982a3.706 3.706 0 0 0 -2.01773-3.8132 3.63989 3.63989 0 0 0 -5.12148 2.49672l-2.86934 13.71022a2.98251 2.98251 0 0 0 2.59834 3.57148l4.91638.544a.994.994 0 0 1 .88777 1.04253l-.77485 13.10586a5.27317 5.27317 0 0 1 -1.477-5.79542h-15.28538c-1.61236 2.6708-4.19312 7.67864-3.14892 10.93614a4.03906 4.03906 0 0 0 2.6086 2.62124 3.72615 3.72615 0 0 0 1.38957.15089 6.4063 6.4063 0 0 0 12.78118-.00019l17.13972-.00026a1.262 1.262 0 0 0 .87507-.423 6.99728 6.99728 0 0 0 .587 1.70334.99551.99551 0 0 0 1.71595.13917c.11616-.16712.24264-.33034.37552-.491a6.40049 6.40049 0 1 0 12.48442-2.71751.98582.98582 0 0 0 .87445-1.075 7.76275 7.76275 0 0 0 -.2593-1.48735zm-40.1837 8.31835a4.40655 4.40655 0 0 1 -4.38442-3.96659l8.76934-.00012a4.407 4.407 0 0 1 -4.38492 3.96671zm19.38718-10.92348h-3.88491l1.71778-16.23965a2.98154 2.98154 0 0 0 -1.92587-3.10417l-4.90033-1.8287a.99167.99167 0 0 1 -.62211-1.1485l.74566-3.215a17.07769 17.07769 0 0 0 8.86978 3.6323zm14.58609 11.21888a4.41268 4.41268 0 0 1 -4.96131-4.86111l.30465-.37917a11.08251 11.08251 0 0 1 7.67557-1.50985l.23622.18239a4.40049 4.40049 0 0 1 -3.25513 6.56774z"
+                                      fill="currentColor"
+                                      data-original="#000000"
+                                    />
+                                  </g>
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Delivery</span>
+                          </label>
+                        </li>
+                        <li class="col-auto">
+                          <label
+                            for="takeawayOption"
+                            class="custom-radio radio-with-icon"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#takeAwayOptions"
+                            aria-expanded="false"
+                            aria-controls="takeAwayOptions"
+                          >
+                            <div class="radio-mark-wrapper">
+                              <input
+                                type="radio"
+                                name="order_options"
+                                id="takeawayOption"
+                              />
+                              <span class="radio-mark"></span>
+                              <span class="test"></span>
+                            </div>
+                            <i class="icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs"
+                                version="1.1"
+                                x="0"
+                                y="0"
+                                viewBox="0 0 512 512"
+                                style="enable-background: new 0 0 512 512"
+                                xml:space="preserve"
+                              >
+                                <g>
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m252.686 120 32-32h-228.686c-3.262 0-8 6.233-8 16s4.738 16 8 16z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m290.11 181.826a35.227 35.227 0 0 1 -51.897-45.826h-168.235l-37.3 126.271a24.077 24.077 0 0 0 -.678 5.668v220.061h264v-220.061a40.073 40.073 0 0 1 1.193-9.7c.028-.109.058-.219.09-.328l31.317-106.022zm-130.11 114.174h-.015a7.974 7.974 0 0 1 -.83 3.578l-15.019 30.039 6.619 92.673a24 24 0 0 1 -23.939 25.71h-13.632a24 24 0 0 1 -23.939-25.71l6.619-92.673-15.019-30.039a7.974 7.974 0 0 1 -.83-3.578h-.015v-32a8 8 0 0 1 16 0v24h16v-24a8 8 0 0 1 16 0v24h16v-24a8 8 0 0 1 16 0zm72.115 144.1a24.043 24.043 0 0 1 -17.8 7.9h-12.635a24 24 0 0 1 -23.88-26.388l6.2-62.012v-2.66l-11.578-5.789a8 8 0 0 1 -4.4-7.754c.268-3.564 7.118-87.397 55.978-87.397a8 8 0 0 1 8 8v95.6l6.2 62.008a24.038 24.038 0 0 1 -6.085 18.492z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m432 24h48v88h-48z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m235.945 43.324-52.571 28.676h120.626a8 8 0 0 1 5.657 13.657l-54.768 54.769a19.226 19.226 0 0 0 25.4 28.771l49.927-38.832a11.282 11.282 0 0 1 6.891-2.365h19.666a27.258 27.258 0 0 0 27.227-27.227 12.788 12.788 0 0 1 12.773-12.773h19.227v-48h-167.018a27.3 27.3 0 0 0 -13.037 3.324z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m128.551 336h-17.1l-6.251 87.431a8 8 0 0 0 7.98 8.569h13.632a8 8 0 0 0 7.98-8.569z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m200 352h16v-78.542c-9.86 3.757-17.938 14.762-24.086 32.853a175.605 175.605 0 0 0 -7.365 33.019l11.029 5.515a8 8 0 0 1 4.422 7.155z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m108.944 320h22.112l8-16h-38.112z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m323.314 488h41.372l-20.686-20.686z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m216.76 368h-17.52l-5.521 55.2a8 8 0 0 0 7.961 8.8h12.64a8 8 0 0 0 7.961-8.8z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                  <path
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    d="m312.679 262.271a24.077 24.077 0 0 0 -.679 5.668v208.747l24-24v-172.686a8 8 0 0 1 16 0v172.686l24 24v-208.078a23.947 23.947 0 0 0 -.975-6.769l-31.042-105.544z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  />
+                                </g>
+                              </svg>
+                            </i>
+                            <span>Takeaway</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div
+                        class="accordion-collapse collapse mt-3 mx-2"
+                        id="takeAwayOptions"
+                        data-bs-parent="#delivery_wrapper"
+                      >
+                        <div class="dropdown day">
+                          <a href="#" data-bs-toggle="dropdown"
+                            >Day <span id="selected_day"></span
+                          ></a>
+                          <div class="dropdown-menu">
+                            <div class="dropdown-menu-content">
+                              <h4>Which day delivered?</h4>
+                              <div class="radio_select chose_day">
+                                <ul>
+                                  <li>
+                                    <input
+                                      type="radio"
+                                      id="day_1"
+                                      name="day"
+                                      value="Today"
+                                    />
+                                    <label for="day_1">Today</label>
+                                  </li>
+                                  <li>
+                                    <input
+                                      type="radio"
+                                      id="day_2"
+                                      name="day"
+                                      value="Tomorrow"
+                                    />
+                                    <label for="day_2">Tomorrow</label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown time">
+                          <a href="#" data-bs-toggle="dropdown"
+                            >Time <span id="selected_time"></span
+                          ></a>
+                          <div class="dropdown-menu">
+                            <input
+                              type="time"
+                              name="orderTime"
+                              id="orderTime"
+                              class="w-100 border-0 bg-transparent py-1 px-2 rounded-3 fs-5"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="dummyDiv"
+                        data-bs-parent="#delivery_wrapper"
+                        class="accordion-collapse collapse"
+                      ></div>
+                    </div> -->
+                    <div class="divider my-2"></div>
+                  </div>
+                  <ul>
+                    <li class="row mx-0">
+                      <div class="col">Subtotal</div>
+                      <div class="col-auto">250 AED</div>
+                    </li>
+                    <li class="row mx-0">
+                      <div class="col">Delivery fee</div>
+                      <div class="col-auto">10 AED</div>
+                    </li>
+                    <li class="row mx-0">
+                      <div class="col">Vat</div>
+                      <div class="col-auto">3 AED</div>
+                    </li>
+                    <li class="divider my-2"></li>
+                    <li class="row mx-0">
+                      <div class="col lead">
+                        <strong class="text-uppercase">Total</strong>
+                      </div>
+                      <div class="col-auto lead">
+                        <strong>260 AED</strong>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade login-modal"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 text-uppercase" id="loginModalLabel">
+              Sign In
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <form>
+              <div class="row mx-0 g-3 justify-content-center">
+                <div class="col-6">
+                  <a href="#" class="social_bt facebook smooth">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs"
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 408.788 408.788"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085  h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882  v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955  l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087  c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085  C408.786,24.662,384.124,0,353.701,0z"
+                            fill="currentColor"
+                            data-original="#475993"
+                          />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                        </g>
+                      </svg>
+                    </i>
+                    <span>Login with Facebook</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#" class="social_bt google smooth">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs"
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class=""
+                      >
+                        <g>
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M492.668,211.489l-208.84-0.01c-9.222,0-16.697,7.474-16.697,16.696v66.715  c0,9.22,7.475,16.696,16.696,16.696h117.606c-12.878,33.421-36.914,61.41-67.58,79.194L384,477.589  c80.442-46.523,128-128.152,128-219.53c0-13.011-0.959-22.312-2.877-32.785C507.665,217.317,500.757,211.489,492.668,211.489z"
+                            fill="#167ee6"
+                            data-original="#167ee6"
+                          />
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M256,411.826c-57.554,0-107.798-31.446-134.783-77.979l-86.806,50.034  C78.586,460.443,161.34,512,256,512c46.437,0,90.254-12.503,128-34.292v-0.119l-50.147-86.81  C310.915,404.083,284.371,411.826,256,411.826z"
+                            fill="#12b347"
+                            data-original="#12b347"
+                          />
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M384,477.708v-0.119l-50.147-86.81c-22.938,13.303-49.48,21.047-77.853,21.047V512  C302.437,512,346.256,499.497,384,477.708z"
+                            fill="#0f993e"
+                            data-original="#0f993e"
+                          />
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M100.174,256c0-28.369,7.742-54.91,21.043-77.847l-86.806-50.034C12.502,165.746,0,209.444,0,256  s12.502,90.254,34.411,127.881l86.806-50.034C107.916,310.91,100.174,284.369,100.174,256z"
+                            fill="#ffd500"
+                            data-original="#ffd500"
+                          />
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M256,100.174c37.531,0,72.005,13.336,98.932,35.519c6.643,5.472,16.298,5.077,22.383-1.008  l47.27-47.27c6.904-6.904,6.412-18.205-0.963-24.603C378.507,23.673,319.807,0,256,0C161.34,0,78.586,51.557,34.411,128.119  l86.806,50.034C148.202,131.62,198.446,100.174,256,100.174z"
+                            fill="#ff4b26"
+                            data-original="#ff4b26"
+                          />
+                          <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            d="M354.932,135.693c6.643,5.472,16.299,5.077,22.383-1.008l47.27-47.27  c6.903-6.904,6.411-18.205-0.963-24.603C378.507,23.672,319.807,0,256,0v100.174C293.53,100.174,328.005,113.51,354.932,135.693z"
+                            fill="#d93f21"
+                            data-original="#d93f21"
+                          />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                        </g>
+                      </svg>
+                    </i>
+                    <span>Login with Google</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#" class="social_bt apple smooth">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs"
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 13.802 13.802"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path
+                                d="M10.668,7.333c-0.018-1.749,1.426-2.586,1.49-2.628c-0.811-1.185-2.073-1.348-2.524-1.366    c-1.073-0.11-2.096,0.632-2.642,0.632c-0.544,0-1.386-0.617-2.277-0.601C3.543,3.388,2.464,4.052,1.86,5.1    c-1.217,2.112-0.312,5.24,0.874,6.955c0.58,0.838,1.272,1.779,2.179,1.746c0.874-0.035,1.204-0.566,2.261-0.566    s1.354,0.566,2.278,0.549c0.941-0.018,1.536-0.855,2.111-1.695c0.666-0.973,0.94-1.916,0.957-1.963    C12.498,10.114,10.687,9.421,10.668,7.333z"
+                                fill="currentColor"
+                                data-original="#030104"
+                              />
+                              <path
+                                d="M8.93,2.204C9.411,1.621,9.737,0.809,9.648,0C8.953,0.028,8.114,0.461,7.615,1.045    C7.168,1.562,6.779,2.387,6.883,3.18C7.657,3.241,8.449,2.786,8.93,2.204z"
+                                fill="currentColor"
+                                data-original="#030104"
+                              />
+                            </g>
+                          </g>
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                          <g xmlns="http://www.w3.org/2000/svg" />
+                        </g>
+                      </svg>
+                    </i>
+                    <span>Login with Apple</span>
+                  </a>
+                </div>
+              </div>
+              <div class="divider"><span>Or</span></div>
+              <div class="form-group mb-2">
+                <label class="mb-1" for="loginEmail">Email</label>
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="loginEmail"
+                    placeholder="Enter Your Email"
+                    id="loginEmail"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label class="mb-1" for="loginPassword">Password</label>
+                <div class="input-password">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="loginPassword"
+                    placeholder="Enter Your Password"
+                    id="loginPassword"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 24 24"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8zm5 10.722v2.278c0 .552-.447 1-1 1s-1-.448-1-1v-2.278c-.595-.347-1-.985-1-1.722 0-1.103.897-2 2-2s2 .897 2 2c0 .737-.405 1.375-1 1.722z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                  <button class="btn show-password">
+                    <i>
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="eye"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M160 256C160 185.3 217.3 128 288 128C358.7 128 416 185.3 416 256C416 326.7 358.7 384 288 384C217.3 384 160 326.7 160 256zM288 336C332.2 336 368 300.2 368 256C368 211.8 332.2 176 288 176C287.3 176 286.7 176 285.1 176C287.3 181.1 288 186.5 288 192C288 227.3 259.3 256 224 256C218.5 256 213.1 255.3 208 253.1C208 254.7 208 255.3 208 255.1C208 300.2 243.8 336 288 336L288 336zM95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6V112.6zM288 80C222.8 80 169.2 109.6 128.1 147.7C89.6 183.5 63.02 225.1 49.44 256C63.02 286 89.6 328.5 128.1 364.3C169.2 402.4 222.8 432 288 432C353.2 432 406.8 402.4 447.9 364.3C486.4 328.5 512.1 286 526.6 256C512.1 225.1 486.4 183.5 447.9 147.7C406.8 109.6 353.2 80 288 80V80z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="d-flex g1 justify-content-between align-items-center mb-3"
+              >
+                <label for="rememberMe" class="custom-check">
+                  <div class="check-mark-wrapper">
+                    <input type="checkbox" name="remember-me" id="rememberMe" />
+                    <span class="check-mark"></span>
+                  </div>
+                  <span>Remember me</span>
+                </label>
+                <button
+                  class="btn forgot"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#forgotPasswordModal"
+                >
+                  Forgot Password?
+                </button>
+              </div>
+              <button
+                class="btn btn-main w-100 mb-2"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#userReorderModal"
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+                class="btn btn-gray w-100 mb-2"
+              >
+                Don’t have an account? sign up
+              </button>
+              <button
+                type="button"
+                class="btn text-capitalize text-alt text-decoration-underline w-100"
+              >
+                continue as a guest
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password Modal -->
+    <div
+      class="modal fade forgot-password-modal"
+      id="forgotPasswordModal"
+      tabindex="-1"
+      aria-labelledby="forgotPasswordModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              class="btn btn-text"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs"
+                  version="1.1"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 447.243 447.243"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path
+                          d="M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48    c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754    l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160    c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4    l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88    C449.654,211.494,437.806,195.059,420.361,192.229z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                    <g xmlns="http://www.w3.org/2000/svg" />
+                  </g>
+                </svg>
+              </i>
+              <span>Back</span>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <h2 class="h4">Forgot Password</h2>
+            <form>
+              <div class="form-group mb-3">
+                <label class="mb-1" for="forgotEmail"
+                  >Please confirm login email below</label
+                >
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="forgotEmail"
+                    placeholder="Enter Your Email"
+                    id="forgotEmail"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <p>
+                You will receive an email containing a link allowing you to
+                reset your password to a new preferred one.
+              </p>
+              <button type="submit" class="btn btn-main mx-auto">
+                Reset Password
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup Modal -->
+    <div
+      class="modal fade signup-modal"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 text-uppercase" id="signupModalLabel">
+              Sign Up
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <form autocomplete="off">
+              <div class="form-group mb-2">
+                <label class="mb-1" for="signupUserName">Full Name:</label>
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="signupUserName"
+                    placeholder="Enter Your Full Name"
+                    id="signupUserName"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512.002"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <label class="mb-1" for="signupEmail">Email:</label>
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    id="signupEmail"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <label class="mb-1" for="birthday">Birthday:</label>
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="birthday"
+                    placeholder="mm/dd/yyyy"
+                    id="birthday"
+                    onfocus="this.type = 'date'"
+                    onblur="this.type = 'text'"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 34 34"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="m29.6 2h-3v3c0 .6-.5 1-1 1s-1-.4-1-1v-3h-16v3c0 .6-.5 1-1 1s-1-.4-1-1v-3h-3c-1.5 0-2.6 1.3-2.6 3v3.6h32v-3.6c0-1.7-1.8-3-3.4-3zm-28.6 8.7v18.3c0 1.8 1.1 3 2.7 3h26c1.6 0 3.4-1.3 3.4-3v-18.3zm8.9 16.8h-2.4c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c-.1.5-.4.8-.9.8zm0-9h-2.4c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c-.1.5-.4.8-.9.8zm8 9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm0-9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm8 9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8zm0-9h-2.5c-.4 0-.8-.3-.8-.8v-2.5c0-.4.3-.8.8-.8h2.5c.4 0 .8.3.8.8v2.5c0 .5-.3.8-.8.8z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group mb-2">
+                <label class="mb-1" for="mobile">Phone:</label>
+                <div class="position-relative">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="mobile"
+                    placeholder="Enter Your Phone"
+                    id="mobile"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 503.604 503.604"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <path
+                              d="M337.324,0H167.192c-28.924,0-53.5,23.584-53.5,52.5v398.664c0,28.916,24.056,52.44,52.98,52.44l170.412-0.184    c28.92,0,52.58-23.528,52.58-52.448l0.248-398.5C389.908,23.452,366.364,0,337.324,0z M227.68,31.476h49.36    c4.336,0,7.868,3.52,7.868,7.868c0,4.348-3.532,7.868-7.868,7.868h-49.36c-4.348,0-7.868-3.52-7.868-7.868    C219.812,34.996,223.332,31.476,227.68,31.476z M198.02,33.98c2.916-2.912,8.224-2.952,11.136,0c1.46,1.456,2.324,3.5,2.324,5.588    c0,2.048-0.864,4.088-2.324,5.548c-1.452,1.46-3.504,2.32-5.548,2.32c-2.084,0-4.088-0.86-5.588-2.32    c-1.452-1.456-2.28-3.5-2.28-5.548C195.736,37.48,196.568,35.436,198.02,33.98z M250.772,488.008    c-12.984,0-23.544-10.568-23.544-23.548c0-12.984,10.56-23.548,23.544-23.548s23.544,10.564,23.544,23.548    C274.316,477.44,263.752,488.008,250.772,488.008z M365.488,424.908H141.232V74.756h224.256V424.908z"
+                              fill="currentColor"
+                              data-original="#000000"
+                            />
+                          </g>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                        <g xmlns="http://www.w3.org/2000/svg" />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label class="mb-1" for="signupPassword">Password:</label>
+                <div class="input-password">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="signupPassword"
+                    placeholder="Enter Your Password"
+                    id="signupPassword"
+                  />
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 24 24"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8zm5 10.722v2.278c0 .552-.447 1-1 1s-1-.448-1-1v-2.278c-.595-.347-1-.985-1-1.722 0-1.103.897-2 2-2s2 .897 2 2c0 .737-.405 1.375-1 1.722z"
+                          fill="currentColor"
+                          data-original="#000000"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                  <button class="btn show-password">
+                    <i>
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="eye"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M160 256C160 185.3 217.3 128 288 128C358.7 128 416 185.3 416 256C416 326.7 358.7 384 288 384C217.3 384 160 326.7 160 256zM288 336C332.2 336 368 300.2 368 256C368 211.8 332.2 176 288 176C287.3 176 286.7 176 285.1 176C287.3 181.1 288 186.5 288 192C288 227.3 259.3 256 224 256C218.5 256 213.1 255.3 208 253.1C208 254.7 208 255.3 208 255.1C208 300.2 243.8 336 288 336L288 336zM95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6V112.6zM288 80C222.8 80 169.2 109.6 128.1 147.7C89.6 183.5 63.02 225.1 49.44 256C63.02 286 89.6 328.5 128.1 364.3C169.2 402.4 222.8 432 288 432C353.2 432 406.8 402.4 447.9 364.3C486.4 328.5 512.1 286 526.6 256C512.1 225.1 486.4 183.5 447.9 147.7C406.8 109.6 353.2 80 288 80V80z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+              <a
+                href="./profile.html"
+                role="button"
+                class="btn btn-main w-100 mb-2"
+              >
+                Sign Up
+              </a>
+              <span class="d-block mb-2 text-center"
+                >Already have an account?</span
+              >
+              <button
+                class="btn btn-dark-main w-100"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugins Scripts -->
+    <script src="./assets/js/common_scripts.min.js"></script>
+    <script src="./assets/js/jquery-wizard-master/js/jquery.steps.js" defer></script>
+    <!-- Custom Scripts -->
+    <script src="./assets/js/pages/catering-order.js" defer></script>
+    <script>
+      const preloader = $("#simplePreloader");
+
+      $(function () {
+        if (preloader.length !== 0) {
+          preloader.slideUp(400);
+        }
+      });
+    </script>
+  </body>
+</html>

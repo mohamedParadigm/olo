@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Texas Chicken Delivery - takeaway</title>
+    <!-- Favicons-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Texas logo.svg"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      href="./assets/images/favicon/apple-touch-icon-57x57-precomposed.png"
+    /> -->
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/js/jquery-toast-plugin-master/css/jquery.toast.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/js/custom-input-number/customInputNumber.css"
+    />
+    <link rel="stylesheet" href="./assets/js/bootstrap-select-1.13.14/css/bootstrap-select.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <style>
+      .min-select-height {
+      min-height: 35px;
+      }
+    </style>
+  </head>
+  <body class="bg_gray">
+    <main class="app">
+      <!-- Header -->
+      <header class="py-1 bg-white">
+        <div class="container">
+          <div class="row mx-0 align-items-center">
+            <div class="col-auto">
+              <a href="index.html" class="btn btn-text">
+                <i class="flip-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 447.243 447.243"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48    c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754    l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160    c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4    l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88    C449.654,211.494,437.806,195.059,420.361,192.229z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+                <span>Back</span>
+              </a>
+            </div>
+            <div class="col">
+              <div class="search_bar_list mx-auto">
+                <input
+                  type="text"
+                  class="form-control smooth"
+                  placeholder="Search Your Meal"
+                />
+                <a
+                  href="./search.html"
+                  role="button"
+                  type="submit"
+                  class="search-icon"
+                >
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 612.01 612.01"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                          <g id="_x34__4_">
+                            <g>
+                              <path
+                                d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0     C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586     l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8     c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407     S377.82,467.8,257.493,467.8z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                        <g xmlns="http://www.w3.org/2000/svg"></g>
+                      </g>
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <a href="./index.html" class="d-flex">
+                <img
+                  src="./assets/images/Texas logo.svg"
+                  alt="Logo"
+                  width="80"
+                  height="80"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="bg_gray flex-grow-1">
+        <div class="container py-5">
+          <h2 class="h4 mb-4">
+            Search Results <span class="lead">(7 Items)</span>
+          </h2>
+          <!-- [ Empty Search Don't Remove It ] -->
+          <!-- <div class="not-found-search">
+            <i class="d-flex justify-content-center mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 511.904 511.904" style="enable-background:new 0 0 512 512;width: 100px;height: 100px;color: grey;" xml:space="preserve" class=""><g><g xmlns="http://www.w3.org/2000/svg"><g><g><path d="m451.93 59.974c-79.966-79.965-210.079-79.965-290.044 0-77.594 77.595-79.894 202.407-6.9 282.802l-27.649 27.649-14.916-14.916c-1.875-1.875-4.419-2.929-7.071-2.929s-5.196 1.054-7.071 2.929l-86.242 86.243c-7.762 7.761-12.037 18.081-12.037 29.058s4.275 21.296 12.036 29.058c7.762 7.761 18.082 12.036 29.058 12.036 10.977 0 21.296-4.275 29.058-12.036l86.243-86.242c1.875-1.875 2.929-4.419 2.929-7.071s-1.054-5.196-2.929-7.071l-14.916-14.916 27.649-27.649c38.969 35.382 88.375 53.073 137.78 53.073 52.52 0 105.039-19.991 145.022-59.974 79.965-79.966 79.965-210.079 0-290.044zm-395.92 425.751c-3.984 3.984-9.281 6.179-14.916 6.179-5.634 0-10.932-2.194-14.916-6.179-3.984-3.984-6.178-9.281-6.178-14.915s2.194-10.932 6.179-14.916l79.171-79.172 29.832 29.832zm381.778-149.85c-72.167 72.168-189.592 72.168-261.759.001-72.168-72.168-72.168-189.593-.001-261.76 36.084-36.084 83.483-54.126 130.88-54.126 47.398 0 94.796 18.042 130.879 54.126 72.168 72.167 72.168 189.592.001 261.759z" fill="currentColor" data-original="#000000" class=""/><path d="m467.73 203.043c-.852-4.181-4.316-7.425-8.556-7.966-4.163-.531-8.368 1.719-10.206 5.496-1.807 3.711-1.158 8.243 1.673 11.263 2.858 3.048 7.429 3.987 11.261 2.332 4.262-1.84 6.752-6.569 5.828-11.125z" fill="currentColor" data-original="#000000" class=""/><path d="m453.914 241.154c-5.269-1.662-10.884 1.261-12.545 6.528-6.848 21.703-18.52 40.908-34.694 57.082-26.648 26.648-62.079 41.325-99.767 41.325-37.687 0-73.119-14.676-99.768-41.325-55.011-55.012-55.011-144.522 0-199.534 26.649-26.649 62.081-41.325 99.768-41.325 37.688 0 73.119 14.676 99.767 41.325 15.992 15.992 28.009 35.794 34.751 57.264 1.655 5.27 7.27 8.199 12.537 6.544 5.269-1.654 8.199-7.268 6.544-12.537-7.704-24.532-21.428-47.152-39.69-65.414-30.426-30.427-70.88-47.183-113.909-47.183s-83.483 16.756-113.91 47.183c-62.81 62.81-62.81 165.009 0 227.819 30.427 30.426 70.88 47.183 113.91 47.183s83.483-16.756 113.909-47.183c18.209-18.208 31.911-40.756 39.625-65.206 1.661-5.268-1.261-10.885-6.528-12.546z" fill="currentColor" data-original="#000000" class=""/><path d="m245.538 266.367c12.928 12.928 33.964 12.928 46.892 0l14.479-14.479 14.478 14.479c6.464 6.464 14.955 9.696 23.446 9.696s16.982-3.232 23.446-9.696c12.928-12.928 12.928-33.964 0-46.892l-14.479-14.479 14.479-14.479c12.928-12.928 12.928-33.963 0-46.892-12.928-12.928-33.964-12.928-46.892 0l-14.479 14.48-14.479-14.48c-12.929-12.928-33.963-12.928-46.892 0-12.928 12.928-12.928 33.964.001 46.892l14.479 14.479-14.48 14.479c-12.927 12.927-12.928 33.963.001 46.892zm14.142-32.75 21.55-21.55c1.875-1.875 2.929-4.419 2.929-7.071s-1.054-5.196-2.929-7.071l-21.55-21.55c-5.13-5.13-5.13-13.477 0-18.607 5.129-5.129 13.478-5.13 18.607 0l21.55 21.55c1.876 1.876 4.419 2.929 7.071 2.929s5.196-1.054 7.071-2.929l21.55-21.55c5.13-5.13 13.478-5.13 18.607 0 5.13 5.13 5.13 13.477 0 18.607l-21.55 21.55c-1.875 1.875-2.929 4.419-2.929 7.071s1.054 5.196 2.929 7.071l21.55 21.55c5.13 5.13 5.13 13.477 0 18.607-5.128 5.13-13.476 5.131-18.607 0l-21.55-21.55c-1.875-1.876-4.419-2.929-7.071-2.929s-5.196 1.054-7.071 2.929l-21.55 21.55c-5.129 5.13-13.477 5.13-18.607 0s-5.131-13.477 0-18.607z" fill="currentColor" data-original="#000000" class=""/></g></g></g></g></svg>
+            </i>
+            <h1 class="text-center h4 mb-3 py-5">
+              No result found for your search!
+            </h1>
+            <a href="./menu.html" class="btn btn-main pulse-btn w-fit mx-auto"
+              >Explore Menu</a
+            >
+          </div> -->
+          <ul class="row g-3 mx-0">
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi 3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Original</option>
+                        <option value="2">Spicy</option>
+                      </select>
+                    </div>
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Combo</option>
+                        <option value="2">Sandwich</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi 3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Original</option>
+                        <option value="2">Spicy</option>
+                      </select>
+                    </div>
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Combo</option>
+                        <option value="2">Sandwich</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi 3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Original</option>
+                        <option value="2">Spicy</option>
+                      </select>
+                    </div>
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Combo</option>
+                        <option value="2">Sandwich</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-lg-4 col-xl-3">
+              <div class="meal-item flip-row custom-shadow justify-height">
+                <button class="btn add-to-widhlist smooth with-toast mx-auto">
+                  <i class="regular">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512.001 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                  <i class="solid">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          xmlns="http://www.w3.org/2000/svg"
+                          clip-rule="evenodd"
+                          d="m256 469.878c-86.27-49.763-253.779-170.182-255.971-290.334-2.395-131.178 145.05-190.67 255.971-77.883 110.905-112.771 258.343-53.318 255.971 77.86-2.171 120.16-169.697 240.59-255.971 290.357z"
+                          fill-rule="evenodd"
+                          fill="currentColor"
+                          data-original="#000000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </i>
+                </button>
+                <a href="./customize.html" class="meal-image">
+                  <img
+                    src="./assets/images/location_list_placeholder.png"
+                    data-src="./assets/images/menu-thumb-3.png"
+                    class="lazy"
+                    width="120"
+                    height="120"
+                    alt=""
+                  />
+                </a>
+                <div class="px-2 px-lg-3 py-3 meal-item-details">
+                  <h3 class="item-title">Chicken burger sandwich</h3>
+                  <small class="meal-item-description d-block mb-2"
+                    >3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi 3chichen, pepsi, fries, mashed potato 3chichen,
+                    pepsi</small
+                  >
+                  <div class="customize-link-wrapper mb-2">
+                    <a href="./customize.html" class="btn btn-text-alt customize-link">
+                      <span>Customize</span>
+                      <i class="flip-icon d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 492.004 492.004"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                  fill="currentColor"
+                                  data-original="#000000"
+                                />
+                              </g>
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                            <g xmlns="http://www.w3.org/2000/svg" />
+                          </g>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Original</option>
+                        <option value="2">Spicy</option>
+                      </select>
+                    </div>
+                    <div class="col px-2">
+                      <select class="my-select show-tick form-control">
+                        <option value="1">Combo</option>
+                        <option value="2">Sandwich</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex g1 align-items-center justify-content-between flex-wrap mt-auto"
+                  >
+                    <span class="price text-center d-block"
+                      >14 <small>AED </small></span
+                    >
+                    <div class="options show-toast fly-to-cart">
+                      <button
+                        role="button"
+                        class="btn btn-main pulse-btn w-100 add-to-cart"
+                      >
+                        Add To Cart
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Repeat Order Modal -->
+    <button
+      class="btn d-none"
+      id="repeatOrderTrigger"
+      data-bs-toggle="modal"
+      data-bs-target="#repeatOrder"
+    >
+      Repeat Order Trigger
+    </button>
+    <div
+      class="modal fade repeat-order-modal"
+      id="repeatOrder"
+      tabindex="-1"
+      aria-labelledby="repeatOrderLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 text-uppercase" id="repeatOrderLabel">
+              Repeat Order?
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead text-center">
+              Want to repeat order with same customization or choose new
+              customization?
+            </p>
+            <div class="bg_gray radius-1 mb-3 p-2">
+              <h3 class="h6">Your previous customization</h3>
+              <div class="row mx-0">
+                <div class="col">
+                  <p class="lead fs-sm">
+                    Chicken Fillet Sandwich Combo Extra Pepsi, Extra Skin On
+                    Fries
+                  </p>
+                </div>
+                <div class="col-auto">
+                  <div class="options options2 show">
+                    <input
+                      class="numberstyle"
+                      type="number"
+                      min="0"
+                      step="1"
+                      value="1"
+                      readonly
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0">
+              <div class="col">
+                <a
+                  href="./customize.html"
+                  class="btn btn-dark-main w-100"
+                  role="button"
+                >
+                  Customize
+                </a>
+              </div>
+              <div class="col">
+                <button class="btn btn-main pulse-btn w-100">Repeat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugins Scripts -->
+    <script src="./assets/js/common_scripts.min.js"></script>
+    <script src="./assets/js/jquery-toast-plugin-master/js/jquery.toast.min.js"></script>
+    <script src="./assets/js/custom-input-number/customInputNumber.js"></script>
+    <script src="./assets/js/bootstrap-select-1.13.14/js/bootstrap-select.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="./assets/js/pages/search.js"></script>
+  </body>
+</html>

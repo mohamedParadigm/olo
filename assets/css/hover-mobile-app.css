@@ -1,0 +1,87 @@
+.hover-mobile-app {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 4.5rem;
+  z-index: 200;
+}
+[dir="rtl"] .hover-mobile-app {
+  left: auto;
+  right: 1.5rem;
+}
+.hover-mobile-app:not(.show) {
+  display: none;
+}
+.hover-mobile-app .btn-hover-mobile-trigger {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover-mobile-app .hover-mobile-app-content {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0.5rem;
+  right: 0;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  box-shadow: 0 0 5px 1px rgb(134, 134, 134);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+[dir="rtl"] .hover-mobile-app .hover-mobile-app-content {
+  right: auto;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.hover-mobile-app:hover .hover-mobile-app-content {
+  opacity: 1;
+  visibility: visible;
+}
+.hover-mobile-app .hover-mobile-title {
+  padding: 0.5rem 1rem;
+  background-color: #2d2a26;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.hover-mobile-app .hover-mobile-options {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hover-mobile-app .hover-mobile-separator {
+  height: 100px;
+  border-left: 1px dashed #2d2a26;
+}
+.hover-mobile-app .with-mobile-types {
+  width: 100px;
+}
+.hover-mobile-app .with-mobile-types li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.hover-mobile-app .with-mobile-types .with-mobile-types-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+@media (max-width: 991px) {
+  .hover-mobile-app {
+    display: none !important;
+  }
+}

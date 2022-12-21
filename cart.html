@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Texas Chicken Delivery - takeaway</title>
+    <!-- Favicons-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Texas logo.svg"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      href="./assets/images/favicon/favicon.png"
+    /> -->
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/js/jquery-toast-plugin-master/css/jquery.toast.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/OwlCarousel2/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="assets/js/add-to-cart/add-to-cart.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/pages/cart.css" />
+    
+    <!-- Preload Style -->
+    <style>
+      .simple-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999999999999999999;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #9a3324;
+        border-color: #9a3324 #9a3324 #9a3324 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg_gray">
+    <!-- Preloader -->
+    <div id="simplePreloader" class="simple-preloader">
+      <div class="lds-dual-ring"></div>
+    </div>
+
+    <main class="app">
+      <!-- Header -->
+      <header class="py-1 bg-white scene_element scene_element--fadein">
+        <div class="container">
+          <div class="row mx-0 g1 align-items-center justify-content-between">
+            <div class="col-auto">
+              <a href="index.html" class="btn btn-text">
+                <i class="flip-icon d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 447.243 447.243"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48    c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754    l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160    c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4    l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88    C449.654,211.494,437.806,195.059,420.361,192.229z"
+                            fill="currentColor"
+                            data-original="#000000"
+                          />
+                        </g>
+                      </g>
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                      <g xmlns="http://www.w3.org/2000/svg" />
+                    </g>
+                  </svg>
+                </i>
+                <span>Back</span>
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="./index.html" class="d-flex">
+                <img
+                  src="./assets/images/Texas logo.svg"
+                  alt="Logo"
+                  width="80"
+                  height="80"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="flex-grow-1">
+        <div class="container py-5">
+          <!-- [ Empty Cart Don't Remove It ] -->
+          <div class="row mx-0 g-4">
+            <div class="col-12 text-center">
+              <i class="d-flex justify-content-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 22.423 25.186"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    filter: grayscale(1);
+                    opacity: 0.8;
+                  "
+                >
+                  <g
+                    id="Group_3475"
+                    data-name="Group 3475"
+                    transform="translate(-1097.15 -133.549)"
+                  >
+                    <g
+                      id="Group_3474"
+                      data-name="Group 3474"
+                      transform="translate(627 32.169)"
+                    >
+                      <path
+                        id="Path_1597"
+                        data-name="Path 1597"
+                        d="M50.8,11.846l2.765,6.143V34.166H48.033V17.989Z"
+                        transform="translate(439.011 92.401)"
+                        fill="#f8b02d"
+                      ></path>
+                      <path
+                        id="Path_1598"
+                        data-name="Path 1598"
+                        d="M46.987,8.414H32.141a1.024,1.024,0,0,0-1.024,1.024v1.843H48.011V9.438a1.024,1.024,0,0,0-1.024-1.024"
+                        transform="translate(441.797 92.966)"
+                        fill="#f2f2f2"
+                      ></path>
+                      <path
+                        id="Path_1599"
+                        data-name="Path 1599"
+                        d="M27.808,17.989V34.165H44.7V17.989l2.765-6.143H30.572Z"
+                        transform="translate(442.343 92.401)"
+                        fill="#f2f2f2"
+                      ></path>
+                    </g>
+                    <g
+                      id="Texas_logo"
+                      data-name="Texas logo"
+                      transform="translate(1098.249 143.332)"
+                    >
+                      <g
+                        id="Group_1909"
+                        data-name="Group 1909"
+                        transform="translate(0.73 0)"
+                      >
+                        <path
+                          id="Path_1425"
+                          data-name="Path 1425"
+                          d="M77.742,77.529a5.608,5.608,0,0,1,9.718-1.385l1.247-.178a6.738,6.738,0,0,0-12.213,1.74Z"
+                          transform="translate(-76.495 -72.784)"
+                          fill="#f6b318"
+                        ></path>
+                        <path
+                          id="Path_1426"
+                          data-name="Path 1426"
+                          d="M103.432,250.99a5.607,5.607,0,0,1-8.57.119l-1.288.184a6.738,6.738,0,0,0,11.375-.52Z"
+                          transform="translate(-92.607 -240.696)"
+                          fill="#f6b318"
+                        ></path>
+                      </g>
+                      <g
+                        id="Group_1910"
+                        data-name="Group 1910"
+                        transform="translate(7.481 8.654)"
+                      >
+                        <path
+                          id="Path_1427"
+                          data-name="Path 1427"
+                          d="M196.191,242.337h0l-.03-.155a.3.3,0,0,0-.075,0c-.136.02-.2.076-.156.368.036.257.11.295.262.273a.661.661,0,0,0,.175-.052l.039.128a.971.971,0,0,1-.223.063c-.256.036-.384-.03-.435-.382-.055-.384.071-.495.325-.53a.783.783,0,0,1,.2,0l.036.273Z"
+                          transform="translate(-195.736 -241.113)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1428"
+                          data-name="Path 1428"
+                          d="M211.614,239.628h0l.1-.02-.092-.645-.106.01-.016-.115.383-.055.016.115-.1.018.035.242.34-.048-.034-.242-.1.01-.016-.115.382-.054.017.115-.105.02.092.645.106-.01.016.115-.382.054-.016-.115.1-.018-.038-.267-.341.049.038.267.1-.01.016.115-.383.055Z"
+                          transform="translate(-210.612 -237.987)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1429"
+                          data-name="Path 1429"
+                          d="M233.737,237.7h0l.1-.02-.092-.645-.106.01-.016-.115.391-.056.016.115-.1.02.092.646.106-.01.016.115-.391.056Z"
+                          transform="translate(-231.482 -236.241)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1430"
+                          data-name="Path 1430"
+                          d="M248.444,234.9h0l-.03-.155a.3.3,0,0,0-.075,0c-.136.02-.2.076-.156.368.036.257.11.295.262.273a.662.662,0,0,0,.175-.052l.039.128a.972.972,0,0,1-.223.063c-.256.036-.384-.03-.435-.382-.055-.384.071-.495.325-.53a.783.783,0,0,1,.2,0l.036.273Z"
+                          transform="translate(-245.031 -234.092)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1431"
+                          data-name="Path 1431"
+                          d="M263.858,232.358h0l.1-.02-.092-.645-.106.01-.016-.115.363-.052.016.111-.078.014.043.3.226-.334-.083.008-.016-.111.363-.052.016.115-.072.014-.236.343.343.3.075-.008.016.115-.377.053-.016-.11.083-.015L264.1,232l.046.321.078-.009.016.111-.363.052Z"
+                          transform="translate(-259.897 -231.139)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1432"
+                          data-name="Path 1432"
+                          d="M284.865,229.549h0l-.017-.073-.193.028.037.264.255-.036-.009-.108.123-.018.034.235-.671.1-.016-.115.1-.02-.092-.646-.106.01-.016-.115.671-.1.032.227-.123.018-.021-.1-.255.036.035.247.193-.028,0-.073.111-.016.037.264Z"
+                          transform="translate(-279.284 -228.769)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1433"
+                          data-name="Path 1433"
+                          d="M302.634,226.651h0l-.016-.115.1-.02-.092-.645-.106.01-.016-.115.343-.049.323.428a2.513,2.513,0,0,1,.155.235h0c-.022-.086-.042-.18-.053-.25l-.049-.348-.1.01-.016-.113.351-.05.016.115-.094.017.109.766-.235.034-.324-.428a2.517,2.517,0,0,1-.155-.235h-.005c.022.086.043.18.053.25l.049.347.1-.01.016.113Z"
+                          transform="translate(-296.463 -225.63)"
+                          fill="#2d2a26"
+                        ></path>
+                      </g>
+                      <path
+                        id="Path_1434"
+                        data-name="Path 1434"
+                        d="M76.166,136.339a.243.243,0,0,1,.191.045c.109.083.179.27.227.608l1.035-.255a1.648,1.648,0,0,0-.531-1.134,1.232,1.232,0,0,0-.954-.179,1.581,1.581,0,0,0-1.022.515,1.372,1.372,0,0,0-.26,1.1c.128.887.746,1.127,1.292,1.338l.006,0c.4.15.754.28.808.652a.44.44,0,0,1-.024.264.223.223,0,0,1-.179.115c-.285.041-.433-.151-.521-.684l-1.07.275a.038.038,0,0,1-.045-.023l-1.152-3.058-1.428.206-.245,4.04a.038.038,0,0,1-.071.016l-.838-1.591a.038.038,0,0,1,0-.026L72,135.624l-1.217.171-.294,2.045a.038.038,0,0,1-.032.032l-.033,0a.038.038,0,0,1-.04-.022l-.622-1.342-6.154.87.136.945.779-.111a.037.037,0,0,1,.042.031l.52,3.7,1.07-.15-.52-3.7a.038.038,0,0,1,.007-.028.036.036,0,0,1,.025-.015l.668-.094a.037.037,0,0,1,.042.032l.52,3.7,2.246-.316h.005a.037.037,0,0,1,.037.045l-.226,1.173,1.341-.179.315-2.81a.039.039,0,0,1,.032-.033l.026,0a.038.038,0,0,1,.04.022l.649,1.476,2-.282.016-.957a.038.038,0,0,1,.032-.036l.774-.111a.037.037,0,0,1,.041.026l.286.918,1.158-.164-.15-.421A.038.038,0,0,1,75.53,140a.037.037,0,0,1,.047,0,1.374,1.374,0,0,0,1.238.293,1.308,1.308,0,0,0,1.191-1.647c-.124-.862-.8-1.131-1.335-1.348l-.073-.029c-.363-.156-.6-.283-.651-.609a.319.319,0,0,1,.031-.207A.247.247,0,0,1,76.166,136.339Zm-6.43,2.508-.317,1.48a.038.038,0,0,1-.031.029l-1.53.214h-.005a.04.04,0,0,1-.023-.008.037.037,0,0,1-.015-.025l-.125-.894a.036.036,0,0,1,.007-.028.037.037,0,0,1,.025-.015l1.074-.155-.132-.92-1.071.154a.036.036,0,0,1-.028-.007.037.037,0,0,1-.015-.025l-.113-.8a.036.036,0,0,1,.007-.028.037.037,0,0,1,.025-.015l1.537-.216a.037.037,0,0,1,.038.019l.688,1.213A.039.039,0,0,1,69.735,138.847Zm4.178-.066a.038.038,0,0,1-.026.017l-.461.066h-.005a.037.037,0,0,1-.024-.009.038.038,0,0,1-.013-.028l-.012-1.6a.038.038,0,0,1,.032-.037l.039-.005a.038.038,0,0,1,.042.027l.435,1.544A.041.041,0,0,1,73.914,138.781Z"
+                        transform="translate(-63.607 -131.857)"
+                        fill="#2d2a26"
+                      ></path>
+                      <g
+                        id="Group_1911"
+                        data-name="Group 1911"
+                        transform="translate(13.764 3.511)"
+                      >
+                        <path
+                          id="Path_1435"
+                          data-name="Path 1435"
+                          d="M306.928,135.679l-.072.01.04.277-.067.01-.04-.277-.072.01-.008-.055.212-.031Z"
+                          transform="translate(-306.708 -135.577)"
+                          fill="#2d2a26"
+                        ></path>
+                        <path
+                          id="Path_1436"
+                          data-name="Path 1436"
+                          d="M311.075,134.827l.081.227h0l.014-.241.1-.014.048.332-.061.009-.039-.264h0l-.021.273-.052.008-.1-.256h0l.039.264-.061.009-.048-.332Z"
+                          transform="translate(-310.734 -134.799)"
+                          fill="#2d2a26"
+                        ></path>
+                      </g>
+                      <g
+                        id="Group_1912"
+                        data-name="Group 1912"
+                        transform="translate(5.291 1.925)"
+                      >
+                        <path
+                          id="Path_1437"
+                          data-name="Path 1437"
+                          d="M158.773,106.778l-1.718,1.688.922-.134.43.827Z"
+                          transform="translate(-157.056 -106.778)"
+                          fill="#f6b318"
+                        ></path>
+                        <path
+                          id="Path_1438"
+                          data-name="Path 1438"
+                          d="M161.827,111.056l-.734-.375.377.726Z"
+                          transform="translate(-160.864 -110.46)"
+                          fill="#f6b318"
+                        ></path>
+                        <path
+                          id="Path_1439"
+                          data-name="Path 1439"
+                          d="M185.382,123.752l-.076.5.813-.118Z"
+                          transform="translate(-183.707 -122.791)"
+                          fill="#f6b318"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </i>
+            </div>
+            <div class="col-12 text-center">
+              <h3 class="h4 text-center mb-0">
+                Your shopping cart looks empty
+              </h3>
+            </div>
+            <div class="col-12 text-center">
+              <p class="lead text-center text-secondary fs-6 mb-0">
+                What are you waiting for?
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <a href="menu.html" class="btn btn-main pulse-btn w-fit mx-auto"
+                >Start Shopping</a
+              >
+            </div>
+          </div>
+          <div class="cart-wrapper">
+            <div class="cart-details">
+              <div class="row mx-0 mb-4">
+                <div class="col px-0">
+                  <h2 class="h4 mb-0">
+                    My Cart <span class="lead">(3 Items)</span>
+                  </h2>
+                </div>
+                <div class="col-auto">
+                  <button
+                    class="btn btn-text text-decoration-underline"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#confirmClearModal"
+                  >
+                    Clear Cart
+                  </button>
+                </div>
+              </div>
+              <ul class="mb-5">
+                <li class="cart-item d-flex g2 p-2 custom-shadow mb-4">
+                  <a
+                    href="./customize.html"
+                    class="position-relative flex-shrink-0"
+                  >
+                    <img
+                      src="./assets/images/meal2.jpg"
+                      data-src="./assets/images/meal2.jpg"
+                      alt=""
+                      class="lazy loaded"
+                      width="120"
+                      height="120"
+                    />
+                  </a>
+                  <div class="flex-grow-1 py-2">
+                    <h3 class="fs-6">Chicken burger sandwich</h3>
+                    <button
+                      class="btn details-btn accordion-button collapsed smooth mb-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#details_1"
+                      aria-expanded="false"
+                      aria-controls="details_1"
+                    >
+                      <span>Details</span>
+                    </button>
+                    <div id="details_1" class="collapse mb-2">
+                      <p class="mb-1">
+                        <span class="d-inline-flex align-items-center as-list"
+                          >3chichen, pepsi, fries, mashed potato 3chichen
+                          ,pepsi</span
+                        >
+                      </p>
+                      <a
+                        href="./customize.html"
+                        class="customize-btn smooth mb-3"
+                      >
+                        <span>Customize</span>
+                        <i class="flip-icon d-flex">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 492.004 492.004"
+                            style="enable-background: new 0 0 512 512"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                  <path
+                                    d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  ></path>
+                                </g>
+                              </g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                            </g>
+                          </svg>
+                        </i>
+                      </a>
+                      <div class="d-flex g2 align-items-center">
+                        <label
+                          for="mediumOption_1"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_1"
+                              id="mediumOption_1"
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Medium</span>
+                            <div class="fs-xs text-alt">1 AED</div>
+                          </div>
+                        </label>
+                        <label
+                          for="largeOption_1"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_1"
+                              id="largeOption_1"
+                              checked
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Large</span>
+                            <div class="fs-xs text-alt">2 AED</div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex g1 align-items-center justify-content-between w-100"
+                    >
+                      <span class="price text-center d-block"
+                        >14 <small>AED</small></span
+                      >
+                      <div
+                        class="options show-repeat-modal show-toast confirm-delete show"
+                      >
+                        <button
+                          role="button"
+                          class="btn btn-main pulse-btn w-100 add-to-cart triggerAdd"
+                        >
+                          Add To Cart
+                        </button>
+                        <div class="numberstyle-qty">
+                          <button type="button" class="qty-btn qty-rem  ready-to-remove">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="far"
+                              data-icon="trash-can"
+                              class="svg-inline--fa fa-trash-can"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"
+                              ></path>
+                            </svg>
+                          </button>
+                          <input
+                            class="numberstyle"
+                            type="number"
+                            min="0"
+                            step="1"
+                            value="1"
+                            readonly=""
+                          />
+                          <button type="button" class="qty-btn qty-add">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cart-item d-flex g2 p-2 custom-shadow mb-4">
+                  <a
+                    href="./customize.html"
+                    class="position-relative flex-shrink-0"
+                  >
+                    <img
+                      src="./assets/images/meal2.jpg"
+                      data-src="./assets/images/meal2.jpg"
+                      alt=""
+                      class="lazy loaded"
+                      width="120"
+                      height="120"
+                    />
+                  </a>
+                  <div class="flex-grow-1 py-2">
+                    <h3 class="fs-6">Chicken burger sandwich</h3>
+                    <button
+                      class="btn details-btn accordion-button collapsed smooth mb-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#details_2"
+                      aria-expanded="false"
+                      aria-controls="details_2"
+                    >
+                      <span>Details</span>
+                    </button>
+                    <div id="details_2" class="collapse mb-2">
+                      <p class="mb-1 d-flex g1 flex-wrap align-items-center">
+                        <span class="text-main">Customized: </span>
+                        <span class="d-inline-flex align-items-center as-list"
+                          >3chichen, pepsi, fries, mashed potato 3chichen
+                          ,pepsi</span
+                        >
+                        <span class="d-inline-flex align-items-center as-list"
+                          >no adons</span
+                        >
+                      </p>
+                      <a
+                        href="./customize.html"
+                        class="customize-btn smooth mb-3"
+                      >
+                        <span>Customize</span>
+                        <i class="flip-icon d-flex">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 492.004 492.004"
+                            style="enable-background: new 0 0 512 512"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                  <path
+                                    d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  ></path>
+                                </g>
+                              </g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                            </g>
+                          </svg>
+                        </i>
+                      </a>
+                      <div class="d-flex g2 align-items-center">
+                        <label
+                          for="mediumOption_2"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_2"
+                              id="mediumOption_2"
+                              checked
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Medium</span>
+                            <div class="fs-xs text-alt">1 AED</div>
+                          </div>
+                        </label>
+                        <label
+                          for="largeOption_2"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_2"
+                              id="largeOption_2"
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Large</span>
+                            <div class="fs-xs text-alt">2 AED</div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex g1 align-items-center justify-content-between w-100"
+                    >
+                      <span class="price text-center d-block"
+                        >14 <small>AED</small></span
+                      >
+                      <div
+                        class="options show-repeat-modal show-toast confirm-delete show"
+                      >
+                        <button
+                          role="button"
+                          class="btn btn-main pulse-btn w-100 add-to-cart triggerAdd"
+                        >
+                          Add To Cart
+                        </button>
+                        <div class="numberstyle-qty">
+                          <button type="button" class="qty-btn qty-rem ready-to-remove">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="far"
+                              data-icon="trash-can"
+                              class="svg-inline--fa fa-trash-can"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"
+                              ></path>
+                            </svg>
+                          </button>
+                          <input
+                            class="numberstyle"
+                            type="number"
+                            min="0"
+                            step="1"
+                            value="1"
+                            readonly=""
+                          />
+                          <button type="button" class="qty-btn qty-add">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cart-item d-flex g2 p-2 custom-shadow">
+                  <a
+                    href="./customize.html"
+                    class="position-relative flex-shrink-0"
+                  >
+                    <img
+                      src="./assets/images/meal2.jpg"
+                      data-src="./assets/images/meal2.jpg"
+                      alt=""
+                      class="lazy loaded"
+                      width="120"
+                      height="120"
+                    />
+                  </a>
+                  <div class="flex-grow-1 py-2">
+                    <h3 class="fs-6">Chicken burger sandwich</h3>
+                    <button
+                      class="btn details-btn accordion-button collapsed smooth mb-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#details_3"
+                      aria-expanded="false"
+                      aria-controls="details_3"
+                    >
+                      <span>Details</span>
+                    </button>
+                    <div id="details_3" class="collapse mb-2">
+                      <p class="mb-1">
+                        3chichen, pepsi, fries, mashed potato 3chichen ,pepsi
+                      </p>
+                      <a
+                        href="./customize.html"
+                        class="customize-btn smooth mb-3"
+                      >
+                        <span>Customize</span>
+                        <i class="flip-icon d-flex">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 492.004 492.004"
+                            style="enable-background: new 0 0 512 512"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                  <path
+                                    d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                    fill="currentColor"
+                                    data-original="#000000"
+                                  ></path>
+                                </g>
+                              </g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                              <g xmlns="http://www.w3.org/2000/svg"></g>
+                            </g>
+                          </svg>
+                        </i>
+                      </a>
+                      <div class="d-flex g2 align-items-center">
+                        <label
+                          for="mediumOption_3"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_3"
+                              id="mediumOption_3"
+                              checked
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Medium</span>
+                            <div class="fs-xs text-alt">1 AED</div>
+                          </div>
+                        </label>
+                        <label
+                          for="largeOption_3"
+                          class="custom-radio align-items-start"
+                        >
+                          <div class="radio-mark-wrapper">
+                            <input
+                              type="radio"
+                              name="size_options_3"
+                              id="largeOption_3"
+                            />
+                            <span class="radio-mark"></span>
+                          </div>
+                          <div>
+                            <span class="d-block">Large</span>
+                            <div class="fs-xs text-alt">2 AED</div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex g1 align-items-center justify-content-between w-100"
+                    >
+                      <span class="price text-center d-block"
+                        >14 <small>AED</small></span
+                      >
+                      <div
+                        class="options show-repeat-modal show-toast confirm-delete show"
+                      >
+                        <button
+                          role="button"
+                          class="btn btn-main pulse-btn w-100 add-to-cart triggerAdd"
+                        >
+                          Add To Cart
+                        </button>
+                        <div class="numberstyle-qty">
+                          <button type="button" class="qty-btn qty-rem ready-to-remove">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="far"
+                              data-icon="trash-can"
+                              class="svg-inline--fa fa-trash-can"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"
+                              ></path>
+                            </svg>
+                          </button>
+                          <input
+                            class="numberstyle"
+                            type="number"
+                            min="0"
+                            step="1"
+                            value="1"
+                            readonly=""
+                          />
+                          <button type="button" class="qty-btn qty-add">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div>
+                <h3 class="h5 mb-4">Complete Your Meal</h3>
+                <ul class="row mx-0 g-3">
+                  <li class="col-6 col-md-4">
+                    <div class="complete-item">
+                      <div class="complete-item-image">
+                        <img
+                          src="assets/images/icons/texas-gray-cart.svg"
+                          data-src="./assets/images/menu-thumb-3.png"
+                          class="lazy"
+                          width="120"
+                          height="120"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <h2 class="complete-item-title">Chicken Burger Sandwich</h2>
+                        <div class="options">
+                          <div class="price">148 AED</div>
+                          <button class="btn btn-main">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-6 col-md-4">
+                    <div class="complete-item">
+                      <div class="complete-item-image">
+                        <img
+                          src="assets/images/icons/texas-gray-cart.svg"
+                          data-src="./assets/images/menu-thumb-3.png"
+                          class="lazy"
+                          width="120"
+                          height="120"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <h2 class="complete-item-title">Chicken Burger Sandwich</h2>
+                        <div class="options">
+                          <div class="price">148 AED</div>
+                          <button class="btn btn-main">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-6 col-md-4">
+                    <div class="complete-item">
+                      <div class="complete-item-image">
+                        <img
+                          src="assets/images/icons/texas-gray-cart.svg"
+                          data-src="./assets/images/menu-thumb-3.png"
+                          class="lazy"
+                          width="120"
+                          height="120"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <h2 class="complete-item-title">Chicken Burger Sandwich</h2>
+                        <div class="options">
+                          <div class="price">148 AED</div>
+                          <button class="btn btn-main">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart-summary" id="sidebar_fixed">
+              <div class="add-more-food mb-3">
+                <a href="./menu.html" class="d-block p-3">
+                  <h3 class="h6 d-flex gap-2 align-items-center">
+                    Add More Food
+                    <i class="flip-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs"
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 492.004 492.004"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path
+                                d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+                                fill="currentColor"
+                                data-original="#000000"
+                              ></path>
+                            </g>
+                          </g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                          <g xmlns="http://www.w3.org/2000/svg"></g>
+                        </g>
+                      </svg>
+                    </i>
+                  </h3>
+                  <p class="mb-0 smooth">View our menu and add more</p>
+                </a>
+              </div>
+              <div class="price-details">
+                <div class="head border-bottom p-3">
+                  <h3 class="h6 mb-0">Price Details</h3>
+                </div>
+                <div class="p-3">
+                  <ul class="mb-3">
+                    <li class="row mx-0">
+                      <div class="col">Subtotal</div>
+                      <div class="col-auto">56 AED</div>
+                    </li>
+                    <li class="row mx-0">
+                      <div class="col">Delivery fee</div>
+                      <div class="col-auto">10 AED</div>
+                    </li>
+                    <li class="row mx-0">
+                      <div class="col">Vat</div>
+                      <div class="col-auto">2 AED</div>
+                    </li>
+                    <li class="divider my-2"></li>
+                    <li class="row mx-0">
+                      <div class="col lead">
+                        <strong class="text-uppercase">Total</strong>
+                      </div>
+                      <div class="col-auto lead">
+                        <strong>68 AED</strong>
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="./order.html"
+                    class="btn btn-main w-100 text-uppercase"
+                  >
+                    Order Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Fixed Bottom Link -->
+    <div class="fixed-bottom-link">
+      <div class="text-center fw-bold">
+        <span class="d-block">3</span>
+        <span>Items</span>
+      </div>
+      <a href="./order.html" class="btn btn-main w-100 justify-content-between">
+        <span>66 AED</span>
+        <span>Order Now</span>
+      </a>
+    </div>
+
+    <!-- Clear Cart Modal -->
+    <div
+      class="modal fade"
+      id="confirmClearModal"
+      tabindex="-1"
+      aria-labelledby="confirmClearModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead mb-0 text-center">
+              Are you sure you want to clear cart?
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-dark-main"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-main">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Delete Modal -->
+    <button
+      class="btn d-none"
+      id="confirmDeleteTrigger"
+      data-bs-toggle="modal"
+      data-bs-target="#confirmDelete"
+    >
+      Confirm Delete
+    </button>
+    <div
+      class="modal fade"
+      id="confirmDelete"
+      tabindex="-1"
+      aria-labelledby="confirmDeleteLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row mx-0 justify-content-center g-2">
+              <div class="col-auto">
+                <img
+                  src="./assets/images/meal2.jpg"
+                  data-src="./assets/images/meal2.jpg"
+                  alt=""
+                  class="lazy loaded img-contain"
+                  width="80"
+                  height="80"
+                />
+              </div>
+              <div class="col-12">
+                <p class="lead mb-0 text-center">
+                  Are you sure you want to delete this item from cart?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-dark-main"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-main">delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat Order Modal -->
+    <button
+      class="btn d-none"
+      id="repeatOrderTrigger"
+      data-bs-toggle="modal"
+      data-bs-target="#repeatOrder"
+    >
+      Repeat Order Trigger
+    </button>
+    <div
+      class="modal fade repeat-order-modal"
+      id="repeatOrder"
+      tabindex="-1"
+      aria-labelledby="repeatOrderLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 text-uppercase" id="repeatOrderLabel">
+              Repeat Order?
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead text-center">
+              Want to repeat order with same customization or choose new
+              customization?
+            </p>
+            <div class="bg_gray radius-1 mb-3 p-2">
+              <h3 class="h6">Your previous customization</h3>
+              <div class="row mx-0">
+                <div class="col">
+                  <p class="lead fs-sm">
+                    Chicken Fillet Sandwich Combo Extra Pepsi, Extra Skin On
+                    Fries
+                  </p>
+                </div>
+                <div class="col-auto">
+                  <div class="options show">
+                    <button
+                      role="button"
+                      class="btn btn-main pulse-btn w-100 add-to-cart triggerAdd"
+                    >
+                      Add To Cart
+                    </button>
+                    <div class="numberstyle-qty">
+                      <button type="button" class="qty-btn qty-rem ready-to-remove">
+                        <svg
+                          aria-hidden="true"
+                          focusable="false"
+                          data-prefix="far"
+                          data-icon="trash-can"
+                          class="svg-inline--fa fa-trash-can"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <input
+                        class="numberstyle"
+                        type="number"
+                        min="0"
+                        step="1"
+                        value="1"
+                        readonly=""
+                      />
+                      <button type="button" class="qty-btn qty-add">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0">
+              <div class="col">
+                <a
+                  href="./customize.html"
+                  class="btn btn-dark-main w-100"
+                  role="button"
+                >
+                  Customize
+                </a>
+              </div>
+              <div class="col">
+                <button class="btn btn-main pulse-btn w-100">Repeat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugins Scripts -->
+    <script src="./assets/js/common_scripts.min.js"></script>
+    <script
+      src="./assets/js/jquery-toast-plugin-master/js/jquery.toast.min.js"
+      defer
+    ></script>
+    <script src="assets/js/add-to-cart/add-to-cart.js" defer></script>
+    <script src="./assets/js/sticky_sidebar.min.js" defer></script>
+    <!-- Custom Scripts -->
+    <script src="./assets/js/pages/cart.js" defer></script>
+    <script>
+      const preloader = $("#simplePreloader");
+
+      $(function () {
+        if (preloader.length !== 0) {
+          preloader.slideUp(400);
+        }
+      });
+    </script>
+  </body>
+</html>

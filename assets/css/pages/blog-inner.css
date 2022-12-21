@@ -1,0 +1,23 @@
+.section-heading {
+  font-size: calc(2rem + 1.25vw);
+}
+p {
+  font-size: 1.15rem;
+}
+[dir="rtl"] p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .owl-prev, .owl-next {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .owl-carousel:hover .owl-prev,
+  .owl-carousel:hover .owl-next {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+[dir="rtl"] .enlarge-rtl {
+  font-size: calc(1.25rem + 0.5vw);
+}

@@ -1,0 +1,91 @@
+.order-with-friends {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 200;
+  display: flex;
+  background-color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  min-height: 280px;
+}
+[dir="rtl"] .order-with-friends {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.order-with-friends .order-with-friends-trigger {
+  writing-mode: vertical-lr;
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+  background-color: #9a3324;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  word-spacing: 3px;
+  font-size: 1rem;
+  border-radius: 0;
+}
+.order-with-friends .order-with-friends-trigger:not(.collapsed) .icon {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.order-with-friends .order-with-friends-trigger.collapsed .icon {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.order-with-friends .order-with-friends-trigger .share-icon {
+  transform: rotate(90deg);
+}
+.order-with-friends .order-with-friends-content {
+  padding: 0.75rem;
+  width: 200px;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+.order-with-friends .order-with-friends-title {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.order-with-friends .order-with-friends-steps {
+  margin-bottom: 1rem;
+}
+.order-with-friends .order-with-friends-steps li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.order-with-friends .order-with-friends-steps li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.order-with-friends .order-with-friends-steps .step-info-title {
+  color: #f6b318;
+  margin-bottom: 0.1rem;
+  font-weight: 600 !important;
+  font-size: 0.85rem;
+}
+.order-with-friends .order-with-friends-steps .step-info-desc {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .order-with-friends {
+    display: none !important;
+  }
+}

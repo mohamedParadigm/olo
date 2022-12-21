@@ -1,0 +1,74 @@
+.invoice {
+  font-family: "Tablet", sans-serif;
+  background-color: #f8f8f8;
+  width: 600px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.invoice .box {
+  background-color: #fff;
+  color: #2d2926;
+  padding: 25px 32px;
+}
+.box-titles {
+  font-size: 20px;
+  line-height: 19px;
+  color: #221f1c;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.header li:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+.body-1 {
+  font-size: 16px;
+  line-height: 18px;
+}
+.recipe-main-heading {
+  font-size: 17px;
+  line-height: 19px;
+  color: #9a3324;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.recipe-sub-heading {
+  margin-bottom: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.dashed {
+  flex-grow: 1;
+  border-bottom: 1px dashed #2d2926;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.body-2 {
+  font-size: 16px;
+  line-height: 18px;
+}
+.summary .title {
+  color: #9a3324;
+  font-size: 17px;
+  line-height: 19px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.summary .body-2 {
+  color: #9a3324;
+}
+.summary .total-label {
+  color: #221f1c;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.summary .total-val {
+  color: #9a3324;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
