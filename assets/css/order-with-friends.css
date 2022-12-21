@@ -84,8 +84,8 @@
   padding-right: 0.5rem;
   margin-bottom: 0;
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .order-with-friends {
     display: none !important;
   }
-}
+} */
